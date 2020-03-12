@@ -1,0 +1,3 @@
+$(".carousels").ready(function() {
+
+});

@@ -1,0 +1,36 @@
+./009Ajax
+├── 10. Ajax典型应用三级联动需求及准备.wmv
+├── 11. Ajax典型应用三级联动城市到部门的 Ajax 实现.wmv
+├── 12. Ajax使用 BlockUI.wmv
+├── 1. Ajax概述.wmv
+├── 2. Ajax使用 XMLHttpRequest 实现 Ajax.wmv
+├── 3. Ajax数据格式HTML.wmv
+├── 4. Ajax数据格式XML.wmv
+├── 5. Ajax数据格式JSON.wmv
+├── 6. Ajax使用 jQuery 实现 Ajax.wmv
+├── 7. Ajax典型应用验证用户名是否可用.wmv
+├── 8. Ajax典型应用添加商品.wmv
+├── 9. Ajax使用 Jackson.wmv
+├── 教学课件Ajax
+│   ├── Ajax.pptx
+│   ├── html
+│   │   ├── clearleft.css
+│   │   └── logo.png
+│   ├── json
+│   │   ├── clearleft.css
+│   │   ├── files
+│   │   │   ├── andy.js
+│   │   │   ├── jeremy.js
+│   │   │   └── richard.js
+│   │   └── logo.png
+│   └── xml
+│       ├── clearleft.css
+│       ├── files
+│       │   ├── andy.xml
+│       │   ├── andy.xml.bak
+│       │   ├── jeremy.xml
+│       │   └── richard.xml
+│       └── logo.png
+└── 教学课件Ajax.zip
+
+6 directories, 27 files

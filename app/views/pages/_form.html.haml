@@ -1,0 +1,53 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @page, :url => website_page_path, :builder => WebsiteFormBuilder  do |f|
+        - if @page.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@page.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @page.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.pages.name, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :name, :class => "form-control"
+
+        .form-group.row
+          = f.label Setting.websites.mastheader, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :mastheader, options_for_subunit_mastheader, {:include_blank=>true}, {:class=>"form-control"}
+        -#
+          
+          .form-group.row
+            = f.label Setting.pages.block_order, :class => "col-sm-3 text-right"
+            .col-sm-9
+              = f.text_field :block_order, :class => "form-control"
+          
+        .form-group.row
+          = f.label "轮播图", :class => "col-sm-1 control-label"
+          .col-sm-11
+            .row
+              = f.fields_for :carousels do |carousel|
+                = render 'carousel_fields', f: carousel 
+              .links
+                = link_to_add_association "添加", f, :carousels, :class => "btn btn-success"
+      
+        .form-group
+          %hr
+          %h3.text-center.my-4
+            网页版块
+          .col-sm-12
+            = f.fields_for :blocks do |block|
+              = render 'block_fields', f: block
+            .links.w-100.px-2
+              = link_to_add_association f, :blocks, :class => "btn btn-block btn-lg btn-outline-default rounded-0" do
+                %i.fa.fa-plus.fa-5x
+      
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', website_pages_path, :class => "btn btn-danger"

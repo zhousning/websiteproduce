@@ -1,0 +1,108 @@
+%nav.col-md-2.d-none.d-md-block.sidebar.shadow
+  .sidebar-sticky.text-center
+    = link_to controls_path, :class => "navbar-brand bg-transparent shadow-none" do
+      = image_tag "logo.svg", :width => "100px"
+    #accordionExample.accordion
+      .card.border-0.rounded-0
+        #headingOne.card-header.p-0.bg-transparent
+          %h3.m-0
+            = link_to nil,  {:class => "d-flex p-3 text-decoration-none", :"aria-controls" => "collapseOne", :"aria-expanded" => "true", :"data-target" => "#collapseOne", :"data-toggle" => "collapse"} do
+              = fa_icon "area-chart", text: "管理面板", class: "mx-3"
+              
+        #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordionExample"}
+          .card-body
+            %ul.list-group.list-group-flush
+              = link_to websites_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "网站管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+      .card.border-0.rounded-0
+        #headingTwo.card-header.p-0.bg-transparent
+          %h4.m-0
+            = link_to nil,  {:class => "d-flex p-3 text-decoration-none", :"aria-controls" => "collapseTwo", :"aria-expanded" => "true", :"data-target" => "#collapseTwo", :"data-toggle" => "collapse"} do
+              = fa_icon "area-chart", text: "管理面板", class: "mx-3"
+        #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordionExample"}
+          .card-body
+            %ul.list-group.list-group-flush
+              = link_to title_ones_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "标题样式", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to formats_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "版式管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to subunits_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "子模块管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to icon_libraries_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "图标管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to color_libraries_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "颜色管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to navbars_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "导航条管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to carousels_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "走马灯管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+      .card.border-0.rounded-0
+        #headingThree.card-header.p-0.bg-transparent
+          %h4.m-0
+            = link_to nil,  {:class => "d-flex p-3 text-decoration-none", :"aria-controls" => "collapseThree", :"aria-expanded" => "true", :"data-target" => "#collapseThree", :"data-toggle" => "collapse"} do
+              = fa_icon "area-chart", text: "管理面板", class: "mx-3"
+              
+        #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordionExample"}
+          .card-body
+            %ul.list-group.list-group-flush
+              = link_to templates_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "模板管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to articles_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "文章管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to roles_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "角色管理", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to notices_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "通知公告", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to statistics_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "数据统计", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              = link_to spiders_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                = fa_icon "area-chart", text: "爬虫", class: "mx-3"
+                %span.badge.badge-primary.badge-pill.pull-right
+                  14
+              -#
+                = link_to title_twos_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                  = fa_icon "area-chart", text: "二级标题", class: "mx-3"
+                  %span.badge.badge-primary.badge-pill.pull-right
+                    14
+                = link_to title_threes_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                  = fa_icon "area-chart", text: "三级标题", class: "mx-3"
+                  %span.badge.badge-primary.badge-pill.pull-right
+                    14
+                = link_to pages_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                  = fa_icon "area-chart", text: "网页管理", class: "mx-3"
+                  %span.badge.badge-primary.badge-pill.pull-right
+                    14
+                = link_to blocks_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                  = fa_icon "area-chart", text: "版块", class: "mx-3"
+                  %span.badge.badge-primary.badge-pill.pull-right
+                    14
+                = link_to block_contents_path, :class => "list-group-item list-group-item-action border-0 text-left pl-4" do
+                  = fa_icon "area-chart", text: "版块内容", class: "mx-3"
+                  %span.badge.badge-primary.badge-pill.pull-right
+                    14

@@ -1,0 +1,58 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @title_one do |f|
+        - if @title_one.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@title_one.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @title_one.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.title_ones.tag, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :tag, options_for_title_tag, {:include_blank=>false}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.align, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :align, options_for_align, {:include_blank=>false}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.color, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :color, options_for_color, {:include_blank=>true}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.weight, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :weight, options_for_weight, {:include_blank=>true}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.font, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :font, options_for_font, {:include_blank=>true}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.background, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :background, options_for_background, {:include_blank=>true}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.line_height, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :line_height, options_for_line_height, {:include_blank=>true}, {:class=>"form-control"}
+        .form-group.row
+          = f.label Setting.title_ones.letter_spacing, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :letter_spacing, options_for_letter_spacing, {:include_blank=>true}, {:class=>"form-control"}
+      
+      
+        .form-group.row
+          = f.label "二级标题", :class => "col-sm-1 control-label"
+          .col-sm-11
+            = f.fields_for :title_twos do |title_two|
+              = render 'title_two_fields', f: title_two 
+            .links
+              = link_to_add_association "添加二级标题", f, :title_twos, :class => "btn btn-success"
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', title_ones_path, :class => "btn btn-danger"

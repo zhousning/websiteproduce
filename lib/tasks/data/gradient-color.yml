@@ -1,0 +1,75 @@
+---
+red:
+  code: '0'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #FEB692 10%, #EA5455 100%'
+      - '135deg, #FFF6B7 10%, #F6416C 100%'
+      - '135deg, #FFF886 10%, #F072B6 100%'
+      - '135deg, #FFD3A5 10%, #FD6585 100%'
+      - '135deg, #FFAA85 10%, #B3315F 100%'
+orange:
+  code: '1'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #FCCF31 10%, #F55555 100%'
+      - '135deg, #FAD7A1 10%, #E96D71 100%'
+      - '135deg, #FEC163 10%, #DE4313 100%'
+      - '135deg, #FFE985 10%, #FA742B 100%'
+yellow:
+  code: '2'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #FDEB71 10%, #F8D800 100%'
+      - '135deg, #FDD819 10%, #E80505 100%'
+      - '135deg, #FFA8A8 10%, #FCFF00 100%'
+green:
+  code: '3'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #81FBB8 10%, #28C76F 100%'
+      - '135deg, #69FF97 10%, #00E4FF 100%'
+cyan:
+  code: '4'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #90F7EC 10%, #32CCBC 100%'
+      - '135deg, #79F1A4 10%, #0E5CAD 100%'
+      - '135deg, #97ABFF 10%, #123597 100%'
+      - '135deg, #65FDF0 10%, #1D6FA3 100%'
+      - '135deg, #81FFEF 10%, #F067B4 100%'
+blue:
+  code: '5'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #ABDCFF 10%, #0396FF 100%'
+      - '135deg, #43CBFF 10%, #9708CC 100%'
+      - '135deg, #5EFCE8 10%, #736EFE 100%'
+      - '135deg, #52E5E7 10%, #130CB7 100%'
+      - '135deg, #2AFADF 10%, #4C83FF 100%'
+      - '135deg, #72EDF2 10%, #5151E5 100%'
+      - '135deg, #3C8CE7 10%, #00EAFF 100%'
+purple:
+  code: '6'
+  gradients:
+    code: '0'
+    value:
+      - '135deg, #CE9FFC 10%, #7367F0 100%'
+      - '135deg, #E2B0FF 10%, #9F44D3 100%'
+      - '135deg, #F97794 10%, #623AA2 100%'
+      - '135deg, #F761A1 10%, #8C1BAB 100%'
+      - '135deg, #EEAD92 10%, #6018DC 100%'
+      - '135deg, #F6CEEC 10%, #D939CD 100%'
+      - '135deg, #FFF3B0 10%, #CA26FF 100%'
+      - '135deg, #F5CBFF 10%, #C346C2 100%'
+      - '135deg, #FF6FD8 10%, #3813C2 100%'
+      - '135deg, #EE9AE5 10%, #5961F9 100%'
+      - '135deg, #FF7AF5 10%, #513162 100%'
+      - '135deg, #3B2667 10%, #BC78EC 100%'
+      - '135deg, #FF96F9 10%, #C32BAC 100%'

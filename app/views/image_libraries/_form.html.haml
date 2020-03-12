@@ -1,0 +1,48 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @image_library do |f|
+        - if @image_library.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@image_library.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @image_library.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.image_libraries.category, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :category, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.image_libraries.style, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :style, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.image_libraries.file_name, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :file_name, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.image_libraries.width, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.number_field :width, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.image_libraries.height, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.number_field :height, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.image_libraries.tag, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_area :tag, :class => "form-control", :rows => "20"
+          
+      
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', image_libraries_path, :class => "btn btn-danger"

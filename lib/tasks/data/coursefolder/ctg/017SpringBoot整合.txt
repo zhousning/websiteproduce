@@ -1,0 +1,45 @@
+./017SpringBoot整合
+├── 课件、软件、代码、笔记.zip
+└── 视频
+    ├── 10、缓存-搭建redis环境&测试.avi
+    ├── 11、缓存-RedisTemplate&序列化机制.avi
+    ├── 12、缓存-自定义CacheManager.avi
+    ├── 13、消息-JMS&AMQP简介.avi
+    ├── 14、消息-RabbitMQ基本概念简介.avi
+    ├── 15、消息-RabbitMQ运行机制.avi
+    ├── 16、消息-RabbitMQ安装测试.avi
+    ├── 17、消息-RabbitTemplate发送接受消息&序列化机制.avi
+    ├── 18、消息-@RabbitListener&@EnableRabbit.avi
+    ├── 19、消息-AmqpAdmin管理组件的使用.avi
+    ├── 1、缓存-JSR107简介.avi
+    ├── 20、检索-Elasticsearch简介&安装.avi
+    ├── 21、检索-Elasticsearch快速入门.avi
+    ├── 22、检索-SpringBoot整合Jest操作ES.avi
+    ├── 23、检索-整合SpringDataElasticsearch.avi
+    ├── 24、任务-异步任务.avi
+    ├── 25、任务-定时任务.avi
+    ├── 26、任务-邮件任务.avi
+    ├── 27、安全-测试环境搭建.avi
+    ├── 28、安全-登录&认证&授权.avi
+    ├── 29、安全-权限控制&注销.avi
+    ├── 2、缓存-Spring缓存抽象简介.avi
+    ├── 30、安全-记住我&定制登陆页.avi
+    ├── 31、分布式-dubbo简介.avi
+    ├── 32、分布式-docker安装zookeeper.avi
+    ├── 33、分布式-SpringBoot、Dubbo、Zookeeper整合.avi
+    ├── 34、分布式-SpringCloud-Eureka注册中心.avi
+    ├── 35、分布式-服务注册.avi
+    ├── 36、分布式-服务发现&消费.avi
+    ├── 37、热部署-devtools开发热部署.avi
+    ├── 38、监管-监管端点测试.avi
+    ├── 39、监管-定制端点.avi
+    ├── 3、缓存-基本环境搭建.avi
+    ├── 40、监管-自定义HealthIndicator.avi
+    ├── 4、缓存-@Cacheable初体验.avi
+    ├── 5、缓存-缓存工作原理&@Cacheable运行流程.avi
+    ├── 6、缓存-@Cacheable其他属性.avi
+    ├── 7、缓存-@CachePut.avi
+    ├── 8、缓存-@CacheEvict.avi
+    └── 9、缓存-@Caching&@CacheConfig.avi
+
+1 directory, 41 files

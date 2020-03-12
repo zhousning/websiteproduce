@@ -1,0 +1,48 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.title_threes.tag
+              %th 
+                = Setting.title_threes.align
+              %th 
+                = Setting.title_threes.color
+              %th 
+                = Setting.title_threes.font
+              %th 
+                = Setting.title_threes.background
+              %th 
+                = Setting.title_threes.weight
+              %th 
+                = Setting.title_threes.line_height
+              %th 
+                = Setting.title_threes.letter_spacing
+          %tbody
+            %tr
+            
+              %td
+                = @title_three.tag
+              %td
+                = @title_three.align
+              %td
+                = @title_three.color
+              %td
+                = @title_three.font
+              %td
+                = @title_three.background
+              %td
+                = @title_three.weight
+              %td
+                = @title_three.line_height
+              %td
+                = @title_three.letter_spacing
+    
+
+= render "layouts/control_panel"

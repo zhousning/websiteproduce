@@ -1,0 +1,63 @@
+./008-2通用Mapper
+├── 视频-1
+│   ├── 01.通用Mapper介绍.avi
+│   ├── 02.创建数据库表和实体类.avi
+│   ├── 03.MyBatis整合Spring的环境.avi
+│   ├── 04.集成通用Mapper.avi
+│   ├── 05.创建具体Mapper接口.avi
+│   ├── 06.Mapper接口介绍.avi
+│   ├── 07.创建测试类.avi
+│   ├── 08.编写测试selectOne方法的代码.avi
+│   ├── 09.@Table注解.avi
+│   ├── 10.@Column注解.avi
+│   ├── 11.selectByPrimaryKey方法.avi
+│   ├── 12.existsByPrimaryKey方法.avi
+│   ├── 13.insert方法.avi
+│   ├── 14.insertSelective方法.avi
+│   ├── 15.updateByPrimaryKeySelective方法.avi
+│   ├── 16.delete和deleteByPrimaryKey方法.avi
+│   ├── 17.QBC查询简介.avi
+│   ├── 18.QBC查询示例.avi
+│   ├── 19.QBC查询的其他属性.avi
+│   ├── 20.selectByRowBounds方法.avi
+│   ├── 21.@Transient注解.avi
+│   ├── 22.原生MyBatis和通用Mapper逆向工程对比.avi
+│   ├── 23.通用Mapper逆向工程官方文档特殊情况说明.avi
+│   ├── 24.通用Mapper逆向工程中pom文件properties声明.avi
+│   ├── 25.通用Mapper逆向工程中pom文件plugin配置.avi
+│   ├── 26.通用Mapper逆向工程generatorConfig.xml配置.avi
+│   ├── 27.运行通用Mapper的逆向工程.avi
+│   ├── 28.逆向工程生成资源介绍.avi
+│   ├── 29.逆向工程生成产品测试.avi
+│   └── 30.自定义Mapper接口介绍.avi
+├── 视频-2
+│   ├── 31.创建自定义Mapper接口.avi
+│   ├── 32.配置自定义Mapper接口.avi
+│   ├── 33.测试自定义Mapper接口.avi
+│   ├── 34.自定义Mapper接口操作时的易错点.avi
+│   ├── 35.扩展通用Mapper接口的大致思路.avi
+│   ├── 36.扩展通用Mapper需要创建的接口和实现类.avi
+│   ├── 37.创建用于功能扩展的接口和实现类.avi
+│   ├── 38.拼SQL语句的foreach标签部分.avi
+│   ├── 39.拼SQL语句的update部分.avi
+│   ├── 40.拼SQL语句的set部分.avi
+│   ├── 41.拼SQL语句的where部分.avi
+│   ├── 42.修正batchUpdate方法返回值并测试批量更新功能.avi
+│   ├── 43.通用Mapper功能扩展代码梳理.avi
+│   ├── 44.二级缓存.avi
+│   ├── 45.简单类型和复杂类型.avi
+│   ├── 46.默认情况下载通用Mapper忽略实体类中的复杂类型.avi
+│   ├── 47.自定义类型转换器说明.avi
+│   ├── 48.BaseTypeHandler类中的抽象方法说明.avi
+│   ├── 49.AddressTypeHandler的setNonNullParameter方法.avi
+│   ├── 50.AddressTypeHandler的getNullableResult方法.avi
+│   ├── 51.使用@ColumnType注解注册AddressTypeHandler.avi
+│   ├── 52.在MyBatis配置文件中全局配置AddressTypeHandler.avi
+│   ├── 53.把枚举类型按照简单类型处理.avi
+│   ├── 54.为枚举类型配置专门的类型处理器.avi
+│   ├── 55.枚举类型处理器中是否带Ordinal的区别.avi
+│   ├── 56.通用Mapper配置项.avi
+│   └── 57.通用Mapper原理.avi
+└── 源码、笔记、资料.zip
+
+2 directories, 58 files

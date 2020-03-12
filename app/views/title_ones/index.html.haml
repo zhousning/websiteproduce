@@ -1,0 +1,61 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            
+              %th{:scope => "col"}
+                = Setting.title_ones.tag
+              %th{:scope => "col"}
+                = Setting.title_ones.align
+              %th{:scope => "col"}
+                = Setting.title_ones.color
+              %th{:scope => "col"}
+                = Setting.title_ones.weight
+              %th{:scope => "col"}
+                = Setting.title_ones.font
+              %th{:scope => "col"}
+                = Setting.title_ones.background
+              %th{:scope => "col"}
+                = Setting.title_ones.line_height
+              %th{:scope => "col"}
+                = Setting.title_ones.letter_spacing
+              %th{:scope => "col"}
+          %tbody
+            - @title_ones.each_with_index do |title_one, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              
+                %td
+                  = options_for_title_tag.key(title_one.tag)
+                %td
+                  = options_for_align.key(title_one.align)
+                %td
+                  = options_for_color.key(title_one.color)
+                %td
+                  = options_for_weight.key(title_one.weight)
+                %td
+                  = options_for_font.key(title_one.font)
+                %td
+                  = options_for_background.key(title_one.background)
+                %td
+                  = options_for_line_height.key(title_one.line_height)
+                %td
+                  = title_one.letter_spacing
+                %td
+                  .container-fluid
+                    .row
+                      = link_to title_one_path(title_one), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_title_one_path(title_one), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to title_one, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                        = fa_icon "trash"
+
+= render "layouts/control_panel"

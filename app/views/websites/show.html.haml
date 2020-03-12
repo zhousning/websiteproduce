@@ -1,0 +1,56 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.websites.name
+              %th 
+                = Setting.websites.style
+              %th 
+                = Setting.websites.color
+              %th 
+                = Setting.contacts.phone
+              %th 
+                = Setting.contacts.wechat
+              %th 
+                = Setting.contacts.address
+              %th 
+                = Setting.contacts.email
+              %th 
+                = Setting.contacts.qq
+              %th 
+                = Setting.contacts.introduce
+          %tbody
+            %tr
+            
+              %td
+                = @website.name
+              %td
+                = @website.style
+              %td
+                = @website.color
+              %td
+                = @website.phone
+              %td
+                = @website.wechat
+              %td
+                = @website.address
+              %td
+                = @website.email
+              %td
+                = @website.qq
+              %td
+                = @website.introduce
+    
+    
+      .col-md-12
+        = image_tag @website.logo_url(:small_width)
+    
+
+= render "layouts/control_panel"

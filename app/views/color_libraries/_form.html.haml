@@ -1,0 +1,38 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @color_library do |f|
+        - if @color_library.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@color_library.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @color_library.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.color_libraries.category, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :category, options_for_website_color, {:include_blank => false}, {:class => "form-control"}
+          
+        .form-group.row
+          = f.label Setting.color_libraries.style, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :style, options_for_color_style, {:include_blank => false}, {:class => "form-control"}
+          
+        .form-group.row
+          = f.label Setting.color_libraries.color_value, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :color_value, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.color_libraries.tag, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :tag, :class => "form-control"
+          
+      
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', color_libraries_path, :class => "btn btn-danger"

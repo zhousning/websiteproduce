@@ -1,0 +1,21 @@
+.nested-fields
+  .form-group
+    .field.d-inline
+      .form-group.row
+        = f.label Setting.block_contents.title, :class => "col-sm-3 text-right"
+        
+        .col-sm-9
+          = f.text_field :title, :class => "form-control", :rows => "20"
+      .form-group.row
+        = f.label Setting.block_contents.description, :class => "col-sm-3 text-right"
+        
+        .col-sm-9
+          = f.text_area :description, :class => "form-control", :rows => "20"
+      .form-group.row
+        = f.label "主图", :class => "col-sm-1 control-label"
+        .col-sm-11
+          = f.fields_for :enclosures do |enclosure|
+            = render 'enclosure_fields', f: enclosure
+          .links
+            = link_to_add_association "添加文件", f, :enclosures, :class => "btn btn-success"
+    = link_to_remove_association "删除", f, :class => "btn btn-danger btn-sm d-inline"

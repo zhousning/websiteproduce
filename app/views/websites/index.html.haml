@@ -1,0 +1,48 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            
+              %th{:scope => "col"}
+                = Setting.websites.name
+              %th{:scope => "col"}
+                = Setting.websites.style
+              %th{:scope => "col"}
+                = Setting.websites.color
+              %th{:scope => "col"}
+          %tbody
+            - @websites.each_with_index do |website, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              
+                %td
+                  = website.name
+                %td
+                  = website.style
+                %td
+                  = website.color
+                %td
+                  .container-fluid
+                    .row
+                      = link_to website_path(website), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_website_path(website), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to export_website_path(website), :class => "text-primary col" do
+                        = fa_icon "wrench"
+                      = link_to website_pages_path(website), :class => "text-primary col" do
+                        = Setting.pages.label
+                      = link_to website_documents_path(website), :class => "text-primary col" do
+                        = Setting.documents.label
+                      -#
+                        = link_to website, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                          = fa_icon "trash"
+
+= render "layouts/control_panel"

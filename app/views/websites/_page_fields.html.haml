@@ -1,0 +1,13 @@
+.nested-fields
+  .form-group
+    .field.d-inline
+      .form-group.row
+        .col-sm-9
+          - unless f.index_page_validate
+            = f.text_field :name, :class => "form-control", :placeholder => "网页名称"
+          - else
+            = f.text_field :name, :class => "form-control", :placeholder => "网页名称", :disabled => "disabled"
+        .col-sm-2
+          - unless f.index_page_validate
+            = link_to_remove_association f, :class => "text-default d-inline" do
+              %i.fa.fa-remove.fa-2x

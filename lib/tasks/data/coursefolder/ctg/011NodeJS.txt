@@ -1,0 +1,29 @@
+./011NodeJS
+├── 课件
+│   └── 课件.zip
+├── 视频
+│   └── 视频
+│       ├── 01._node基础_命令行窗口.avi
+│       ├── 02._node基础_进程和线程.avi
+│       ├── 03._node基础_node简介.avi
+│       ├── 04._node基础_使用node执行js文件.avi
+│       ├── 05._node基础_node整合webstorm.avi
+│       ├── 06._node基础_模块化简介.avi
+│       ├── 07._node基础_模块化详解.avi
+│       ├── 08._node基础_exports和module.exports.avi
+│       ├── 09._node基础_包简介.avi
+│       ├── 10._node基础_npm简介.avi
+│       ├── 11._node基础_配置cnpm.avi
+│       ├── 12._node基础_node搜索包的流程.avi
+│       ├── 13._node基础_Buffer缓冲区.avi
+│       ├── 14._node基础_同步文件写入.avi
+│       ├── 15._node基础_异步的文件写入.avi
+│       ├── 16._node基础_简单文件写入.avi
+│       ├── 17._node基础_流式文件写入.avi
+│       ├── 18._node基础_简单文件读取.avi
+│       ├── 19._node基础_流式文件读取.avi
+│       └── 20._node基础_fs模块的其他方法.avi
+└── 源码、笔记
+    └── 源码&笔记.zip
+
+4 directories, 22 files

@@ -1,0 +1,46 @@
+.nested-fields
+  .form-group
+    .field.d-inline
+      .form-group.row
+        = f.label Setting.title_twos.tag, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :tag, options_for_title_tag, {:include_blank=>false}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.align, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :align, options_for_align, {:include_blank=>false}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.color, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :color, options_for_color, {:include_blank=>true}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.font, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :font, options_for_font, {:include_blank=>true}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.background, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :background, options_for_background, {:include_blank=>true}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.weight, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :weight, options_for_weight, {:include_blank=>true}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.line_height, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.select :line_height, options_for_line_height, {:include_blank=>true}, {:class=>"form-control"}
+      .form-group.row
+        = f.label Setting.title_twos.letter_spacing, :class => "col-sm-3 text-right"
+        .col-sm-9
+          = f.text_field :letter_spacing, :class => "form-control"
+        
+      
+      
+      .form-group.row
+        = f.label "三级标题", :class => "col-sm-1 control-label"
+        .col-sm-11
+          = f.fields_for :title_threes do |title_three|
+            = render 'title_three_fields', f: title_three 
+          .links
+            = link_to_add_association "添加三级标题", f, :title_threes, :class => "btn btn-success"
+    = link_to_remove_association "删除", f, :class => "btn btn-danger btn-sm d-inline"

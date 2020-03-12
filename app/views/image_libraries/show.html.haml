@@ -1,0 +1,40 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.image_libraries.category
+              %th 
+                = Setting.image_libraries.style
+              %th 
+                = Setting.image_libraries.file_name
+              %th 
+                = Setting.image_libraries.width
+              %th 
+                = Setting.image_libraries.height
+              %th 
+                = Setting.image_libraries.tag
+          %tbody
+            %tr
+            
+              %td
+                = @image_library.category
+              %td
+                = @image_library.style
+              %td
+                = @image_library.file_name
+              %td
+                = @image_library.width
+              %td
+                = @image_library.height
+              %td
+                = @image_library.tag
+    
+
+= render "layouts/control_panel"

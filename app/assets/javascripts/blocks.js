@@ -1,0 +1,3 @@
+$(".blocks").ready(function() {
+
+});

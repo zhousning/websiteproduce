@@ -1,0 +1,61 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            
+              %th{:scope => "col"}
+                = Setting.title_twos.tag
+              %th{:scope => "col"}
+                = Setting.title_twos.align
+              %th{:scope => "col"}
+                = Setting.title_twos.color
+              %th{:scope => "col"}
+                = Setting.title_twos.font
+              %th{:scope => "col"}
+                = Setting.title_twos.background
+              %th{:scope => "col"}
+                = Setting.title_twos.weight
+              %th{:scope => "col"}
+                = Setting.title_twos.line_height
+              %th{:scope => "col"}
+                = Setting.title_twos.letter_spacing
+              %th{:scope => "col"}
+          %tbody
+            - @title_twos.each_with_index do |title_two, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              
+                %td
+                  = title_two.tag
+                %td
+                  = title_two.align
+                %td
+                  = title_two.color
+                %td
+                  = title_two.font
+                %td
+                  = title_two.background
+                %td
+                  = title_two.weight
+                %td
+                  = title_two.line_height
+                %td
+                  = title_two.letter_spacing
+                %td
+                  .container-fluid
+                    .row
+                      = link_to title_two_path(title_two), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_title_two_path(title_two), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to title_two, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                        = fa_icon "trash"
+
+= render "layouts/control_panel"

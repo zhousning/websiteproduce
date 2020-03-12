@@ -1,0 +1,15 @@
+class <%= @mc %> < ActiveRecord::Base
+<% if @enclosure %>
+  has_many :enclosures, :dependent => :destroy
+  accepts_nested_attributes_for :enclosures, reject_if: :all_blank, allow_destroy: true
+<% end %>
+<% @relates.each do |relate| %><% relate_arr = relate.split(":") %><% if relate_arr[0] == "has_many" %>
+  has_many :<%= relate_arr[1].pluralize %>, :dependent => :destroy
+  accepts_nested_attributes_for :<%= relate_arr[1].pluralize %>, reject_if: :all_blank, allow_destroy: true
+<% elsif relate_arr[0] == "belongs_to" %>
+  belongs_to :<%= relate_arr[1] %>
+<% elsif relate_arr[0] == "has_one" %>
+  has_one :<%= relate_arr[1] %>
+<% end %>
+<% end %>
+end

@@ -1,0 +1,24 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.formats.name
+          %tbody
+            %tr
+            
+              %td
+                = @format.name
+    
+      .col-md-12
+        - @format.enclosures.each do |e|
+          = image_tag e.file_url(:small_width)
+    
+
+= render "layouts/control_panel"

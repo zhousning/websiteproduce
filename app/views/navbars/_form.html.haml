@@ -1,0 +1,31 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @navbar do |f|
+        - if @navbar.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@navbar.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @navbar.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.navbars.name, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :name, :class => "form-control"
+          
+      
+      
+        .form-group.row
+          = f.label "关联对象", :class => "col-sm-1 control-label"
+          .col-sm-11
+            = f.fields_for :menus do |menu|
+              = render 'menu_fields', f: menu 
+            .links
+              = link_to_add_association "添加", f, :menus, :class => "btn btn-success"
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', navbars_path, :class => "btn btn-danger"

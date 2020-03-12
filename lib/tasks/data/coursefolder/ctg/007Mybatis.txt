@@ -1,0 +1,96 @@
+./007Mybatis
+├── 课件&代码.zip
+├── 视频1
+│   ├── 10.MyBatis全局配置文件typeHandlers类型处理器简介.avi
+│   ├── 11.MyBatis全局配置文件plugins插件简介.avi
+│   ├── 12.MyBatis全局配置文件enviroments运行环境.avi
+│   ├── 13.MyBatis全局配置文件databaseIdProvider多数据库支持.avi
+│   ├── 14.MyBatis全局配置文件mapperssql映射注册.avi
+│   ├── 15.MyBatis小结(2).avi
+│   ├── 16.MyBatis映射文件增删改查.avi
+│   ├── 17.MyBatis映射文件insert获取自增主键的值.avi
+│   ├── 18.MyBatis映射文件insertOracle使用序列生成主键演示.avi
+│   ├── 19.MyBatis映射文件insert获取非自增主键的值selectKey.avi
+│   ├── 1.MyBatis简介.avi
+│   ├── 20.MyBatis映射文件参数处理单个参数&多个参数&命名参数.avi
+│   ├── 21.MyBatis映射文件参数处理POJO&Map&TO.avi
+│   ├── 22.MyBatis映射文件参数处理参数封装扩展思考.avi
+│   ├── 2.MyBatis下载.avi
+│   ├── 3.MyBatisHelloWorld.avi
+│   ├── 4.MyBatis接口式编程.avi
+│   ├── 5.MyBatis小结(1).avi
+│   ├── 6.MyBatis全局配置文件引入dtd约束.avi
+│   ├── 7.MyBatis全局配置文件properties引入外部配置文件.avi
+│   ├── 8.MyBatis全局配置文件settings运行时行为设置.avi
+│   └── 9.MyBatis全局配置文件typeAliases别名.avi
+├── 视频2
+│   ├── 23.MyBatis源码分析参数处理参数封装map的过程.avi
+│   ├── 24.MyBatis映射文件参数处理#与$取值区别.avi
+│   ├── 25.MyBatis映射文件参数处理#取值时指定参数相关规则.avi
+│   ├── 26.MyBatis映射文件select返回List.avi
+│   ├── 27.MyBatis映射文件select记录封装map.avi
+│   ├── 28.MyBatis映射文件selectresultMap自定义结果映射规则.avi
+│   ├── 29.MyBatis映射文件selectresultMap关联查询环境搭建.avi
+│   ├── 30.MyBatis映射文件selectresultMap关联查询级联属性封装结果.avi
+│   ├── 31.MyBatis映射文件selectresultMap关联查询association定义关联对象封装规则.avi
+│   ├── 32.MyBatis映射文件selectresultMap关联查询association分步查询.avi
+│   ├── 33.MyBatis映射文件selectresultMap关联查询分步查询&延迟加载.avi
+│   ├── 34.MyBatis映射文件selectresultMap关联查询collection定义关联集合封装规则.avi
+│   ├── 35.MyBatis映射文件selectresultMap关联查询collection分步查询&延迟加载.avi
+│   ├── 36.MyBatis映射文件selectresultMap分步查询传递多列值&fetchType.avi
+│   ├── 37.MyBatis映射文件selectresultMapdiscriminator鉴别器.avi
+│   ├── 38.MyBatis动态sql简介&环境搭建.avi
+│   ├── 39.MyBatis动态sqlif判断&OGNL.avi
+│   ├── 40.MyBatis动态sqlwhere查询条件.avi
+│   ├── 41.MyBatis动态sqltrim自定义字符串截取.avi
+│   ├── 42.MyBatis动态sqlchoose分支选择.avi
+│   ├── 43.MyBatis动态sqlset与if结合的动态更新.avi
+│   ├── 44.MyBatis动态sqlforeach遍历集合.avi
+│   ├── 45.MyBatis动态sqlforeachmysql下foreach批量插入的两种方式.avi
+│   └── 46.MyBatis动态sqlforeachoracle下批量插入的两种方式.avi
+├── 视频3
+│   ├── 47.MyBatis动态sqlforeachoracle下foreach批量保存两种方式.avi
+│   ├── 48.MyBatis动态sql内置参数parameter&databaseId.avi
+│   ├── 49.MyBatis动态sqlbind绑定.avi
+│   ├── 50.MyBatis动态sqlsql抽取可重用的sql片段.avi
+│   ├── 51.MyBatis缓存缓存介绍.avi
+│   ├── 52.MyBatis缓存一级缓存体验.avi
+│   ├── 53.MyBatis缓存一级缓存失效的四种情况.avi
+│   ├── 54.MyBatis缓存二级缓存介绍.avi
+│   ├── 55.MyBatis缓存二级缓存使用&细节.avi
+│   ├── 56.MyBatis缓存缓存有关的设置以及属性.avi
+│   ├── 57.MyBatis缓存缓存原理图示.avi
+│   ├── 58.MyBatis缓存第三方缓存整合原理&ehcache适配包下载.avi
+│   ├── 59.MyBatis缓存MyBatis整合ehcache&总结.avi
+│   ├── 60.MyBatis整合Spring整合适配包下载.avi
+│   ├── 61.MyBatis整合Spring所有需要的jar包导入.avi
+│   ├── 62.MyBatis整合Spring引入MyBatis之前的配置.avi
+│   ├── 63.MyBatis整合SpringSpringMVC配置文件编写.avi
+│   ├── 64.MyBatis整合SpringSpring配置文件编写.avi
+│   ├── 65.MyBatis整合SpringSpring整合MyBatis关键配置.avi
+│   └── 66.MyBatis整合Spring整合测试.avi
+└── 视频4
+    ├── 67.MyBatis逆向工程mbg简介.avi
+    ├── 68.MyBatis逆向工程mgb配置文件编写.avi
+    ├── 69.MyBatis逆向工程使用mbg逆向生成所有代码及配置.avi
+    ├── 70.MyBatis逆向工程测试简单查询&测试带条件复杂查询.avi
+    ├── 71.MyBatis运行原理框架分层架构.avi
+    ├── 72.MyBatis运行原理调试前注意.avi
+    ├── 73.MyBatis运行原理SQLSessionFactory的初始化.avi
+    ├── 74.MyBatis运行原理openSession获取SqlSession对象.avi
+    ├── 75.MyBatis运行原理getMapper获取到接口的代理对象.avi
+    ├── 76.MyBatis运行原理查询实现.avi
+    ├── 77.MyBatis运行原理查询流程总结.avi
+    ├── 78.MyBatis运行原理MyBatis原理总结.avi
+    ├── 79.MyBatis插件插件原理.avi
+    ├── 80.MyBatis插件插件编写&单个插件原理.avi
+    ├── 81.MyBatis插件多个插件运行流程.avi
+    ├── 82.MyBatis插件开发插件.avi
+    ├── 83.MyBatis扩展分页PageHelpler分页插件使用.avi
+    ├── 84.MyBatis扩展批量BatchExecutor&Spring中配置批量sqlSession.avi
+    ├── 85.MyBatis扩展存储过程oracle中创建一个带游标的存储过程.avi
+    ├── 86.MyBatis扩展存储过程MyBatis调用存储过程.avi
+    ├── 87.MyBatis扩展自定义类型处理器MyBatis中枚举类型的默认处理.avi
+    └── 88.MyBatis扩展自定义类型处理器使用自定义的类型处理器处理枚举类型.avi
+
+4 directories, 89 files

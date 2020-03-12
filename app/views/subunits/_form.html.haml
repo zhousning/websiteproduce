@@ -1,0 +1,64 @@
+.container-fluid
+  .row
+    .col-sm-12
+      = image_tag "subunit_preview/" + @subunit.name + ".JPG", :height => "200", :alt => @subunit.name 
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @subunit do |f|
+        - if @subunit.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@subunit.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @subunit.errors.full_messages.each do |msg|
+                %li= msg
+        .form-group.row
+          = f.label Setting.subunits.type, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :category, options_for_subunit_type, {:include_blank=>false}, {:class=>"form-control"}
+
+        .form-group.row
+          = f.label '图标' + Setting.subunits.type, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :icon_category, options_for_subunit_icon_type, {:include_blank=>false}, {:class=>"form-control"}
+
+        .form-group.row
+          = f.label Setting.subunits.name, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :name, :class => "form-control"
+      
+        .form-group.row
+          = f.label Setting.subunits.min_length, :class => "col-sm-3 text-right"
+          .col-sm-3
+            = f.number_field :min_length, :class => "form-control"
+          = f.label Setting.subunits.max_length, :class => "col-sm-3 text-right"
+          .col-sm-3
+            = f.text_field :max_length, :class => "form-control"
+
+        .form-group.row
+          = f.label Setting.subunits.tag, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :tag, :class => "form-control"
+
+        .form-group.row
+          = f.label Setting.subunits.html, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_area :html, :class => "form-control", :rows => "20"
+          
+        .form-group.row
+          = f.label Setting.subunits.css, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_area :css, :class => "form-control", :rows => "20"
+          
+        .form-group.row
+          = f.label Setting.subunits.js, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_area :js, :class => "form-control", :rows => "20"
+          
+          
+      
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', subunits_path, :class => "btn btn-danger"

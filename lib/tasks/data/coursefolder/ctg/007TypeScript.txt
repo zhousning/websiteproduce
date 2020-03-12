@@ -1,0 +1,23 @@
+./007TypeScript
+├── 01Typescript介绍 、Typescript安装、Typescript开发工具(15分51秒）.zip
+├── 02 Typescript 中的数据类型  布尔类型（boolean）数字类型（number）字符串类型(string) 数组类型（array） 元组类型（tuple）枚举类型（enum） （上）（20分29秒）.zip
+├── 03 Typescript中的数据类型 任意类型（any） null 和 undefined  void类型  never类型（下）（16分6秒）.zip
+├── 04 Typescript中的函数  函数的定义 可选参数  默认参数   剩余参数  函数重载  箭头函数（31分50秒）.zip
+├── 05 Typescript中的类 Es5中的类和静态方法 继承（原型链继承、对象冒充继承、原型链+对象冒充组合继承）（20分40秒）.zip
+├── 06 Typescript中的类  类的定义 继承 类里面的修饰符（上）（29分4秒）.zip
+├── 07 Typescript中的类  类中的静态属性 静态方法 抽象类 多态（下）（27分52秒）.zip
+├── 08 Typescript中的接口的用途 以及属性类型接口（19分46秒）.zip
+├── 09 Typescript中的属性类型接口【案例】 定义Ajax请求数据的接口 ts封装ajax（8分）.zip
+├── 10Typescript中的函数类型口 【案例】 加密方法约束（5分11秒）.zip
+├── 11 Typescript中的可索引接口 类类型接口（12分2秒）.zip
+├── 12 TypeScript中接口扩展、接口的继承（7分19秒）.zip
+├── 13 TypeScript中的泛型 泛型变量  泛型类（22分54秒）.zip
+├── 14 TypeScript的泛型接口 泛型类接口（8分42秒）.zip
+├── 15 TypeScript泛型类 - 把类作为参数类型的泛型类（21分47秒）.zip
+├── 16 TypeScript 类型、接口、类 、泛型 综合使用--TypeScript封装统一操作Mysql Mongodb Mssql的底层类库（14分31秒）.zip
+├── 17 TypeScript 模块 以及模块化封装DB库 封装类似Mongoose风格的类库（25分22秒）.zip
+├── 18 命名空间 命名空间块化（11分35秒）.zip
+├── 19 装饰器定义 类装饰器  属性装饰器 装饰器工厂（23分17秒）.zip
+└── 20 装饰器 方法装饰器  方法参数装饰器 装饰器的执行顺序（28分39秒）.zip
+
+0 directories, 20 files

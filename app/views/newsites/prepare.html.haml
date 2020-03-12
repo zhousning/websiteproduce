@@ -1,0 +1,20 @@
+- provide(:title, t('.title'))
+
+.container.my-5.bg-white
+  .row
+    .col-sm-12
+      %h3
+        %i.fa.fa-connectdevelop.fa-3x
+        天启已准备好为您生成网站
+
+  .row.border.border-primary.height-500.align-items-center
+    .col-md-12.text-center.export-btn-container
+      -#
+        %button.btn.btn-icon.btn-2.btn-primary.js-produce-newsite{:onclick=>"newsite_produce()"}
+      = link_to produce_newsite_path(@website), :class => "btn btn-icon btn-2 btn-primary" do
+        %span.btn-inner--icon.display-3
+          %i.ni.ni-atom
+          智能生成
+  .row.p-5
+    .col-md-2.offset-md-10
+      = link_to '上一步', draft_edit_newsite_path(@website), :class => "btn btn-success"

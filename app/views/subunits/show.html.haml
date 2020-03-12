@@ -1,0 +1,40 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.subunits.type
+              %th 
+                = Setting.subunits.html
+              %th 
+                = Setting.subunits.css
+              %th 
+                = Setting.subunits.js
+              %th 
+                = Setting.subunits.name
+              %th 
+                = '图标' + Setting.subunits.type
+          %tbody
+            %tr
+            
+              %td
+                = options_for_subunit_type.key(@subunit.category)
+              %td
+                = @subunit.html
+              %td
+                = @subunit.css
+              %td
+                = @subunit.js
+              %td
+                = @subunit.name
+              %td
+                = options_for_subunit_icon_type.key(@subunit.icon_category)
+    
+
+= render "layouts/control_panel"

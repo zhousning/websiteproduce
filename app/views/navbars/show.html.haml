@@ -1,0 +1,20 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.navbars.name
+          %tbody
+            %tr
+            
+              %td
+                = @navbar.name
+    
+
+= render "layouts/control_panel"

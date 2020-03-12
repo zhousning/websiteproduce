@@ -1,0 +1,36 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.icon_libraries.category
+              %th 
+                = Setting.icon_libraries.scene
+              %th 
+                = Setting.icon_libraries.style
+              %th 
+                = Setting.icon_libraries.file_name
+              %th 
+                = Setting.icon_libraries.tag
+          %tbody
+            %tr
+            
+              %td
+                = @icon_library.category
+              %td
+                = @icon_library.scene
+              %td
+                = @icon_library.style
+              %td
+                = @icon_library.file_name
+              %td
+                = @icon_library.tag
+    
+
+= render "layouts/control_panel"

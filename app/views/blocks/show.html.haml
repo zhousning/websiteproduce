@@ -1,0 +1,28 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.blocks.name
+              %th 
+                = Setting.blocks.background
+              %th 
+                = Setting.layouts.label
+          %tbody
+            %tr
+            
+              %td
+                = @block.name
+              %td
+                = options_for_background.key(@block.background)
+              %td
+                = options_for_layouts.key(@block.layout)
+    
+
+= render "layouts/control_panel"

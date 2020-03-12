@@ -1,0 +1,27 @@
+./022Jenkins
+├── 视频
+│   ├── 01.持续集成、持续部署、持续交付的概念.avi
+│   ├── 02.Jenkins和Hudson.avi
+│   ├── 03.Web工程部署方式说明.avi
+│   ├── 04.Subversion环境要求.avi
+│   ├── 05.应用服务器设置账号密码说明.avi
+│   ├── 06.运行Jenkins主体程序并初始化.avi
+│   ├── 07.配置JDK和Maven并安装Deploy插件.avi
+│   ├── 08.创建用于测试的Maven工程.avi
+│   ├── 09.创建SVN版本库并提交Maven工程.avi
+│   ├── 10.创建工程并配置源码管理.avi
+│   ├── 11.配置构建命令并手动执行一次构建.avi
+│   ├── 12.配置构建完成后部署到Tomcat上.avi
+│   ├── 13.配置远程触发构建的TOKEN值.avi
+│   ├── 14.curl命令触发构建.avi
+│   ├── 15.编辑SVN钩子程序.avi
+│   ├── 16.测试验证整个自动化持续集成流程.avi
+│   ├── 17.整合GitHub的持续集成环境要点说明.avi
+│   ├── 18.安装Git客户端.avi
+│   ├── 19.在Jenkins中指定Git客户端位置.avi
+│   ├── 20.在GitHub上创建WebHook.avi
+│   ├── 21.关闭防止跨站点请求伪造.avi
+│   └── 22.总结.avi
+└── 资料、工具.zip
+
+1 directory, 23 files

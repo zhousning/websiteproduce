@@ -1,0 +1,33 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            <% @attrs.each do |attr| %>
+              %th{:scope => "col"}
+                = Setting.<%= @mpu %>.<%= attr %><% end %>
+              %th{:scope => "col"}
+          %tbody
+            - @<%= @mpu %>.each_with_index do |<%= @mu %>, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              <% @attrs.each do |attr| %>
+                %td
+                  = <%= @mu %>.<%= attr %><% end %>
+                %td
+                  .container-fluid
+                    .row
+                      = link_to <%= @mu %>_path(<%= @mu %>), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_<%= @mu %>_path(<%= @mu %>), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to <%= @mu  %>, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                        = fa_icon "trash"
+
+= render "layouts/control_panel"

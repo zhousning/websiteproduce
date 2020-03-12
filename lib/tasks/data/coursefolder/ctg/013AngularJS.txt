@@ -1,0 +1,27 @@
+./013AngularJS
+├── Angularjs MVC 以及 $scope作用域 以及依赖注入中代码压缩问题.pdf
+├── Angularjs 基础.pdf
+├── AngularJS权威教程.pdf
+├── 视频
+│   ├── 01. AngularJS_入门介绍.avi
+│   ├── 02. AngularJS_HelloWorld.avi
+│   ├── 03. AngularJS_WebStrom快捷模板设置.avi
+│   ├── 04. AngularJS_表达式和语句.avi
+│   ├── 05. AngularJS_双向数据绑定.avi
+│   ├── 06. AngularJS_作用域对象和控制器对象.avi
+│   ├── 07. AngularJS_声明式和命令式的区别，依赖注入.avi
+│   ├── 08. AngularJS_模块对象.avi
+│   ├── 09. AngularJS_复习&优化.avi
+│   ├── 10. AngularJS_表达式.avi
+│   ├── 11. AngularJS_常用指令(1).avi
+│   ├── 12. AngularJS_常用指令(2).avi
+│   ├── 13. AngularJS_练习1_剩余字数功能实现.avi
+│   ├── 14. AngularJS_练习1_解决剩余字数负数问题.avi
+│   ├── 15. AngularJS_练习1_数据存储功能实现.avi
+│   ├── 16. AngularJS_练习2_数据动态展示.avi
+│   ├── 17. AngularJS_练习2_添加功能实现.avi
+│   └── 18. AngularJS_练习2_删除功能实现.avi
+└── 源码
+    └── code.zip
+
+2 directories, 22 files

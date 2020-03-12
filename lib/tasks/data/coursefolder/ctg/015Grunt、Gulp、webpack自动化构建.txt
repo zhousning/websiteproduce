@@ -1,0 +1,37 @@
+./015Grunt、Gulp、webpack自动化构建
+├── Grunt
+│   ├── 视频
+│   │   ├── 01. _Grunt_入门介绍01.avi
+│   │   ├── 02. _自动化构建工具Grunt_入门介绍02.avi
+│   │   ├── 03. _自动化构建工具Grunt_合并js任务.avi
+│   │   ├── 04. _自动化构建工具Grunt_压缩js任务.avi
+│   │   ├── 05. _自动化构建工具Grunt_默认任务，任务高效说明.avi
+│   │   ├── 06. _自动化构建工具Grunt_任务执行同步说明.avi
+│   │   ├── 07. _自动化构建工具Grunt_js语法检查.avi
+│   │   ├── 08. _自动化构建工具Grunt_合并压缩css任务.avi
+│   │   └── 09. _自动化构建工具Grunt_实现watch监视任务实现自动打包编译.avi
+│   └── 源代码.zip
+├── Gulp
+│   ├── code.zip
+│   └── 视频
+│       ├── 01. _自动化构建工具Gulp_入门介绍.avi
+│       ├── 02. _自动化构建工具Gulp_构建js.avi
+│       ├── 03. _自动化构建工具Gulp_构建less任务.avi
+│       ├── 04. _自动化构建工具Gulp_构建css任务.avi
+│       ├── 05. _自动化构建工具Gulp_执行任务异步，任务之间解决依赖关系.avi
+│       ├── 06. _自动化构建工具Gulp_压缩html任务.avi
+│       ├── 07. _自动化构建工具Gulp_半自动进行项目构建.avi
+│       ├── 08. _自动化构建工具Gulp_全自动进行项目构建.avi
+│       └── 09. _自动化构建工具Gulp_gulp-load-plugins插件扩展.avi
+└── webpack
+    ├── code.zip
+    └── 视频
+        ├── 01. _自动化构建工具webpack_入门介绍.avi
+        ├── 02. _自动化构建工具webpack_打包js,json文件.avi
+        ├── 03. _自动化构建工具webpack_config配置文件说明.avi
+        ├── 04. _自动化构建工具webpack_打包css文件.avi
+        ├── 05. _自动化构建工具webpack_打包图片.avi
+        ├── 06. _自动化构建工具webpack_热加载实现.avi
+        └── 07. _自动化构建工具webpack_插件使用.avi
+
+6 directories, 28 files

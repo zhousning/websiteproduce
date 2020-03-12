@@ -1,0 +1,44 @@
+./009Maven
+├── Maven课件、源码
+│   ├── Maven笔记.png
+│   ├── Maven_代码.zip
+│   ├── Maven课件.zip
+│   └── maven_压缩包.zip
+└── Maven视频
+    ├── 01.Maven目前掌握的技术.avi
+    ├── 02.Maven生产环境下开发对Maven的需求.avi
+    ├── 03.Maven构建的概念.avi
+    ├── 04.Maven运行时环境.avi
+    ├── 05.Maven一只煮熟的鸡.avi
+    ├── 06.Maven自动化构建和构建环节.avi
+    ├── 07.Maven部署Maven核心程序.avi
+    ├── 08.Maven约定的目录结构说明.avi
+    ├── 09.Maven第一个Maven工程的目录结构和文件内容.avi
+    ├── 10.Maven联网问题.avi
+    ├── 11.Maven几个常用Maven命令.avi
+    ├── 12.MavenPOM.avi
+    ├── 13.Maven坐标.avi
+    ├── 14.Maven仓库.avi
+    ├── 15.Maven第二个Maven工程的目录结构和文件内容.avi
+    ├── 16.Maven依赖的基本操作.avi
+    ├── 17.Maven依赖的范围初步介绍.avi
+    ├── 18.Maven生命周期插件和目标.avi
+    ├── 19.MavenMaven插件的设置.avi
+    ├── 20.Maven创建Maven版Java工程.avi
+    ├── 21.Maven在Eclipse中执行Maven命令.avi
+    ├── 22.Maven在Eclipse中创建Maven版的Web工程.avi
+    ├── 23.Maven通过servlet-api进一步理解provided依赖范围.avi
+    ├── 24.Maven通过jsp-api体验jar包之间的冲突.avi
+    ├── 25.Maven导入Maven工程.avi
+    ├── 26.Maven第三个Maven工程.avi
+    ├── 27.Maven依赖的传递性.avi
+    ├── 28.Maven依赖的排除.avi
+    ├── 29.Maven依赖的原则说明.avi
+    ├── 30.Maven依赖的原则测试.avi
+    ├── 31.Maven统一管理依赖的版本号.avi
+    ├── 32.Maven继承.avi
+    ├── 33.Maven聚合.avi
+    ├── 34.MavenWeb工程的自动部署.avi
+    └── 35.Maven查找依赖信息的网站.avi
+
+2 directories, 39 files

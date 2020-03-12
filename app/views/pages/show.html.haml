@@ -1,0 +1,58 @@
+- provide(:title, t('.title'))
+
+.container-fluid
+  .row
+    = render "layouts/control_sidebar"
+    %main.col-md-9.ml-sm-auto.col-lg-10.p-3{:role => "main"}
+      .card.shadow.rounded-0.mb-3
+        .card-header.bg-info.text-white.rounded-0
+          %h5
+            = fa_icon "newspaper-o", text: @page.name 
+            = link_to website_pages_path(@website), :class => "button button-border button-rounded button-caution pull-right  bg-white" do
+              = fa_icon " chevron-left", text: Setting.systems.btn_back, right: false 
+            = link_to edit_website_page_path(@website, @page_id), :class => "button button-border button-rounded button-action pull-right mr-3 bg-white" do
+              = fa_icon "edit", text: Setting.systems.btn_edit, right: false 
+        .card-body
+          .container-fluid
+            .row
+              .col-md-12
+                %table.table.text-center.table-bordered
+                  %thead
+                    %tr
+                    
+                      %th 
+                        = Setting.pages.name
+                      %th
+                        = Setting.websites.mastheader
+                      %th 
+                        = Setting.pages.block_order
+                  %tbody
+                    %tr
+                    
+                      %td
+                        = @page.name
+                      %td
+                        = options_for_subunit_mastheader.key(@page.mastheader.to_i)
+                      %td
+                        = @page.block_order
+            
+              .col-md-12
+                - @page.enclosures.each do |e|
+                  = image_tag e.file_url(:small_width)
+    
+              .col-md-12
+                - @page.blocks.each_with_index do |block, index|
+                  %h2
+                    = index+1
+                    = block.title
+                    = options_for_background.key(block.background)
+                    = options_for_color.key(block.color)
+                    = options_for_layout.key(block.block_layout)
+                  - block.block_contents.each_with_index do |block_content, index|
+                    %h3
+                      = index+1
+                      = block_content.title
+                    %p
+                      = block_content.description
+                    =image_tag block_content.file_url(:small_width)
+

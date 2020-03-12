@@ -1,0 +1,28 @@
+./010-1JPA
+├── 10. JPAEntityManager(4).zip
+├── 11. JPAEntityTransaction.zip
+├── 12. JPA映射单向多对一的关联关系.zip
+├── 13. JPA映射单向一对多的关联关系.zip
+├── 14. JPA映射双向一对多的关联关系.zip
+├── 15. JPA映射双向一对一的关联关系.zip
+├── 16. JPA映射双向多对多的关联关系.zip
+├── 17. JPA二级缓存.zip
+├── 18. JPAJPQLHelloWorld.zip
+├── 19. JPAJPQL查询缓存.zip
+├── 1. JPA概述.zip
+├── 20. JPAJPQLORDER BY 和 GROUP BY.zip
+├── 21. JPAJPQL关联查询.zip
+├── 22. JPAJPQL子查询和内建函数.zip
+├── 23. JPAJPQLDELETE和UPDATE.zip
+├── 24. JPA整合Spring.zip
+├── 25. JPAPPT及源码.zip
+├── 2. JPAHelloWorld.zip
+├── 3. JPA基本注解.zip
+├── 4. JPATransient注解.zip
+├── 5. JPATemporal注解.zip
+├── 6. JPATable主键生成策略.zip
+├── 7. JPAEntityManager(1).zip
+├── 8. JPAEntityManager(2).zip
+└── 9. JPAEntityManager(3).zip
+
+0 directories, 25 files

@@ -1,0 +1,18 @@
+.col-sm-3.pb-3
+  .nested-fields
+    .form-group
+      .field.d-inline
+        .card.rounded-0.border.border-default
+          .card-header.rounded-0.border-0
+            .col-sm-1.offset-11.text-right
+              = link_to_remove_association f, :class => "text-default d-inline" do
+                %i.fa.fa-remove.fa-2x
+          .card-body.p-0
+            .form-group
+              .col-sm-12
+                = f.text_field :name, :class => "form-control", :placeholder => Setting.block_contents.title
+            .form-row.px-3
+              = f.fields_for :enclosures do |enclosure|
+                %label.newbtn
+                  = image_tag f.enclosure_image, :class => "blah"
+                  = f.file_field :file, :accept => "image/png, image/jpeg, image/gif", :class => "select-file", :onchange => "readURL(this);"

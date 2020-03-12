@@ -1,0 +1,19 @@
+./018Web安全
+├── 1、Web 安全介绍与基础入门知识
+│   ├── 01、Web 应用安全发展与介绍.mp4
+│   ├── 02、HTTP 协议与会话管理.mp4
+│   ├── 03、Web 应用的组成与网页的渲染.mp4
+│   ├── 04、浏览器特性与安全策略.mp4
+│   └── WebSoft-1-Web_v1.7z
+├── 2、XSS 入门与介绍
+│   ├── 01、XSS 的入门与介绍.mp4
+│   ├── 02、XSS 的分类.mp4
+│   ├── 03、XSS 盲打平台与 XSS 蠕虫.mp4
+│   └── WebSoft-2-Web_v1.zip
+└── 3、跨站伪造请求（CSRF）
+    ├── 01、CSRF 介绍.mp4
+    ├── 02、CSRF 的几种常见攻击方式.mp4
+    ├── 03、CSRF 的防御方法.mp4
+    └── WebSoft-4-Web-v1.zip
+
+3 directories, 13 files

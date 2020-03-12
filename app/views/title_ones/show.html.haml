@@ -1,0 +1,48 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.title_ones.tag
+              %th 
+                = Setting.title_ones.align
+              %th 
+                = Setting.title_ones.color
+              %th 
+                = Setting.title_ones.weight
+              %th 
+                = Setting.title_ones.font
+              %th 
+                = Setting.title_ones.background
+              %th 
+                = Setting.title_ones.line_height
+              %th 
+                = Setting.title_ones.letter_spacing
+          %tbody
+            %tr
+            
+              %td
+                = @title_one.tag
+              %td
+                = @title_one.align
+              %td
+                = @title_one.color
+              %td
+                = @title_one.weight
+              %td
+                = @title_one.font
+              %td
+                = @title_one.background
+              %td
+                = @title_one.line_height
+              %td
+                = @title_one.letter_spacing
+    
+
+= render "layouts/control_panel"

@@ -1,0 +1,39 @@
+- provide(:title, t('.title'))
+
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @website, :url => { :controller => 'newsites', :action => 'draft_update'}, :builder => WebsiteFormBuilder do |f|
+        - if @website.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@website.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @website.errors.full_messages.each do |msg|
+                %li= msg
+
+        .row.align-items-center
+          .col-sm-8
+            .nav-wrapper
+              %ul#tabs-icons-text.nav.nav-pills.nav-fill.flex-column.flex-md-row{:role => "tablist"}
+                %li.nav-item
+                  %a.nav-link.mb-sm-2.mb-md-0.active{:id => "tabs-icons-text-fist-tab", "aria-controls" => "tabs-icons-text-first", "aria-selected" => "false", "data-toggle" => "tab", :href => "#tabs-icons-text-first", :role => "tab"}
+                    填写说明
+                - @website.pages.each_with_index do |page, index|
+                  %li.nav-item
+                    %a.nav-link.mb-sm-2.mb-md-0{:id => "tabs-icons-text-#{page.id}-tab", "aria-controls" => "tabs-icons-text-#{page.id}", "aria-selected" => "false", "data-toggle" => "tab", :href => "#tabs-icons-text-#{page.id}", :role => "tab"}
+                      = page.name
+          .col-sm-1.offset-sm-1
+            = link_to '上一步', draft_navbar_newsite_path(@website), :class => "btn btn-default"
+          .col-sm-1
+            = f.submit '保存', :class => "btn btn-danger"
+          .col-sm-1
+            = link_to '下一步', prepare_newsite_path(@website), :class => "btn btn-success"
+      
+        .row
+          .col-sm-12
+            .card.bg-transparent
+              .card-body
+                #myTabContent.tab-content
+                  .tab-pane.fade.show.active{:id => "tabs-icons-text-first", "aria-labelledby" => "tabs-icons-text-fist-tab", :role => "tabpanel"}
+                  = f.fields_for :pages do |page|
+                    = render 'draft_page_fields', f: page 

@@ -1,0 +1,22 @@
+.col-sm-3.pb-3
+  .nested-fields
+    .field.d-inline
+      .card.rounded-0.border.border-info
+        .card-header.rounded-0.border-0
+          .col-sm-1.offset-11.text-right
+            = link_to_remove_association f, :class => "text-default d-inline" do
+              %i.fa.fa-remove.fa-2x
+        .card-body.p-0
+          .form-group
+            .col-sm-12
+              = f.text_field :title, :class => "form-control", :rows => "20", :placeholder => Setting.block_contents.title
+          .form-group
+            .col-sm-12
+              = f.text_area :description, :class => "form-control", :rows => "10", :placeholder => Setting.block_contents.description
+          -#
+            .form-group
+              .col-sm-11
+                = f.fields_for :enclosures do |enclosure|
+                  = render 'enclosure_fields', f: enclosure
+                .links
+                  = link_to_add_association "添加配图", f, :enclosures, :class => "btn btn-success"

@@ -1,0 +1,43 @@
+---
+red:
+  code: '0'
+  pures:
+    code: '1'
+    value:
+      - '#f24547'
+orange:
+  code: '1'
+  pures:
+    code: '1'
+    value:
+      - '#f6a145'
+yellow:
+  code: '2'
+  pures:
+    code: '1'
+    value:
+      - '#ebca1c'
+green:
+  code: '3'
+  pures:
+    code: '1'
+    value:
+      - '#48d170'
+cyan:
+  code: '4'
+  pures:
+    code: '1'
+    value:
+      - '#4891c0'
+blue:
+  code: '5'
+  pures:
+    code: '1'
+    value:
+      - '#44a61d'
+purple:
+  code: '6'
+  pures:
+    code: '1'
+    value:
+      - '#7e4176'

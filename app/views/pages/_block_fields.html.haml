@@ -1,0 +1,58 @@
+.nested-fields
+  .form-group
+    .field.d-inline
+      .card.rounded-0.border.border-default
+        .card-header.rounded-0.border-0
+          .row
+            .col-sm-3
+              %button.btn.btn-info{"aria-controls" => "collapseExample", "aria-expanded" => "false", "data-target" => "#collapseExample", "data-toggle" => "collapse", :type => "button"}
+                选择组件 
+            .col-sm-3
+              = f.select :color, options_for_select(options_for_color_arr), {:include_blank => false}, {:class => "form-control"}
+            .col-sm-4
+              .form-group.col.row
+                = f.label Setting.blocks.reset_icon, :class => "col-sm-3 text-right"
+                .col-sm-9
+                  .form-check.form-check-inline
+                    = f.radio_button :reset_icon, Setting.systems.status_en_yes, :class => "form-check-input"
+                    = f.label Setting.systems.status_yes, :class => "form-check-label"
+                  .form-check.form-check-inline
+                    = f.radio_button :reset_icon, Setting.systems.status_en_no, :class => "form-check-input"
+                    = f.label Setting.systems.status_no, :class => "form-check-label"
+            .col-sm-1.offset-1
+              = link_to_remove_association f, :class => "text-default d-inline" do
+                %i.fa.fa-remove.fa-2x
+        .card-body.py-0
+          .form-group
+            .col-sm-12
+              = f.text_field :title, :class => "form-control", :placeholder => '一级标题'
+          .form-group
+            .col-sm-12
+              = f.text_field :title_two, :class => "form-control", :placeholder => '二级标题'
+          .form-group
+            #collapseExample.col-sm-12.collapse
+              .btn-group.btn-group-toggle{"data-toggle" => "buttons"}
+                %ul
+                  - options_for_subunit_block.each do |key, value|
+                    %li.btn.btn-light{:class => f.block_subunit_validate(:subunit, value) ? 'active' : ''}
+                      = f.radio_button :subunit, value, :class => "d-none" 
+                      = image_tag "subunit_preview/" + key + ".JPG", :height => "200", :alt => key
+          .form-group.row
+            = f.fields_for :block_contents do |block_content|
+              = render 'block_content_fields', f: block_content 
+            .links.m-3
+              = link_to_add_association f, :block_contents, :class => "btn btn-lg btn-outline-primary" do
+                %i.fa.fa-plus.fa-5x
+
+      -#
+        .form-group.row
+          = f.label Setting.layouts.label, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :block_layout, options_for_layout, {:include_blank => true}, {:class => "form-control"}
+        
+        .form-group.row
+          = f.label Setting.blocks.background, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :background, options_for_background, {:include_blank => true}, {:class => "form-control"}
+
+

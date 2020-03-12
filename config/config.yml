@@ -1,0 +1,776 @@
+---
+defaults:
+  admins: &1
+    class_name: all
+    email: mytea@world.com
+    phone: '15859859888'
+    password: myteaworld
+  users: &2
+    class_name: User
+    opening: 0
+    pending: 1
+    rejected: 2
+    passed: 3
+    opening_title: 新用户
+    pending_title: 待审核
+    rejected_title: 不通过
+    passed_title: 通过
+    phone: 电话
+    password: 密码
+    password_confirmation: 确认密码
+    name: 姓名
+    identity: 身份证
+    alipay: 支付宝
+    status: 认证状态
+    level: 等级
+    inviter: 邀请者
+  roles: &3
+    label: 角色
+    name: 名称
+    class_name: Role
+    super_admin: 超级管理员
+    buyer: 客户信息管理
+    tax_category: 商品税收分类编码库管理
+    invoice: 发票管理
+  permissions: &4
+    super_admin: 管理系统所有资源
+  citrines: &5
+    exchange_max: 300
+    count: 可用茶晶
+    total: 茶晶总数
+  awards: &6
+    ten_citrine: 10
+    one_citrine: 1
+  wares: &23
+    title: 宝贝标题
+    price: 价格
+    citrine_count: 赠送茶晶数
+    freight: 运费
+    description: 宝贝详情
+    category: 分类
+    brand: 品牌
+    up: 1
+    up_title: 上架
+    down: 0
+    down_title: 下架
+  trees: &7
+    name: 名字
+    count: 茶树数量
+  leafs: &8
+    produce_max: 12
+    pick: 已采摘
+    unpick: 未采摘
+    count: 茶叶数量
+    pick_time: 采摘时间
+    disable: 0
+    enable: 1
+  notices: &24
+    title: 标题
+    content: 内容
+  orders: &9
+    category_none: none
+    category_recharge: 账户充值
+    paid: paid
+    completed: completed
+    state_none: 0
+    state_trade_created: 1
+    state_trade_success: 2
+    state_trade_failed: 3
+    state_none_string: 未定义
+    state_trade_created_string: 已创建
+    state_trade_success_string: 支付成功
+    state_trade_failed_string: 支付失败
+  accounts: &10
+    coin: 金额
+    password: 安全密码
+    number: 卡号
+    award_sign_up: 10
+    award_check_in: 5
+    award_share: 30
+    award_invite_sign_up: 10
+    award_invite_recharge: 40
+    enable: enable
+    disable: disable
+  consumes: &11
+    number: 消费编号
+    category: 项目
+    coin_cost: 消费
+    coin_now: 余额
+    status: 状态
+    category_none: none
+    category_recharge: 充值
+    category_purchase_leaf: 求购茶叶
+    category_exchange_tree: 兑换茶树
+    category_buy_ware: 购买茶叶商品
+    category_buy_ware_citrine: 购买商品奖励茶晶
+    category_buy_commision: 佣金奖励
+    category_friend_reg: 好友注册赠送
+    category_friend_authc: 下级实名赠送
+    category_system_citrine: 系统赠送
+    status_none: none
+    status_create: create
+    status_success: success
+    status_failed: failed
+    status_exception: exception
+  demands: &12
+    price: 单价
+    count: 数量
+    enable: enable
+    disable: disable
+  sells: &13
+    price: 单价
+    count: 数量
+    enable: enable
+    disable: disable
+  systems: &14
+    poundage: 0.1
+    commision: 0.1
+    authc_pay: 1
+    host: www.cygangsta.com
+    status_en_yes: true
+    status_en_no: false
+    status_yes: 是
+    status_no: 否
+    default_str: ''
+    default_num: 0
+    default_boolean: true
+    index: index
+    new: new
+    show: show
+    delete: delete
+    edit: edit
+    btn_back: 返回
+    btn_edit: 编辑
+    btn_new: 添加
+    btn_show: 详情
+    btn_delete: 删除
+    btn_save: 保存
+    company_name: 天启人工智能
+  trade_orders: &15
+    number: 订单编号
+    price: 价格
+    state: 状态
+    name: 姓名
+    phone: 电话
+    address: 地址
+    wayno: 物流信息
+    opening: opening
+    opening_title: 新建
+    pending: pending
+    pending_title: 待支付
+    paid: paid
+    paid_title: 已支付,待发货
+    departed: departed
+    departed_title: 已发货
+    completed: completed
+    completed_title: 已完成
+    canceled: canceled
+    canceled_title: 已取消
+  extract_cashes: &16
+    coin: 提取金额
+    status: 状态
+    pending: pending
+    pending_title: 待审核
+    agree: agree
+    agree_title: 同意
+    disagree: disagree
+    disagree_title: 不同意
+  share_pools: &17
+    today_enter: 今日入账
+    total: 月分红池总额度
+    user_total: 昨日分红池总额
+    pay: 昨日白银茶主平均分红
+    ware_total: 昨日黄金茶主平均分红
+    gross_sale: 昨日铂金茶主平均分红
+    diamond: 昨日钻石茶主平均分红
+    current_total: 分红池当月总额
+    own_tea: 持茶/片所得
+  pick_records: &18
+    number: 数量
+  trades: &19
+    min: 交易最低价
+    max: 交易最高价
+    total_purchase: 今日总求购
+    price: 今日茶叶价
+    volume: 今日成交量
+    start: 交易开始时间
+    end: 交易结束时间
+    start_default: '09:00'
+    end_default: '16:00'
+  levels: &20
+    bronze: 青铜茶主
+    silver: 白银茶主
+    gold: 黄金茶主
+    platinum: 铂金茶主
+    diamond: 钻石茶主
+  teams: &21
+    children: 我的直推
+  tea_prices: &22
+    price: 今日茶叶价
+development:
+  admins: *1
+  users: *2
+  roles: *3
+  permissions: *4
+  citrines: *5
+  awards: *6
+  wares:
+    label: ''
+    name: 名字
+  trees: *7
+  leafs: *8
+  notices:
+    label: 通知公告
+    title: 标题
+    content: 正文
+  orders: *9
+  accounts: *10
+  consumes: *11
+  demands: *12
+  sells: *13
+  systems: *14
+  trade_orders: *15
+  extract_cashes: *16
+  share_pools: *17
+  pick_records: *18
+  trades: *19
+  levels: *20
+  teams: *21
+  tea_prices: *22
+  reports:
+    title: 标题
+    content: 正文
+  models:
+    label: ''
+    name: 名称
+    image: 图像
+    index: 列表
+    new: 新建
+    edit: 编辑
+    show: 详情
+    form: 表单
+    js: js
+    scss: scss
+    admin: 添加到后台
+  properties:
+    label: ''
+    name: 英文属性名
+    type: 类型
+    title: 中文属性名
+    tag: 标签
+  relates:
+    label: ''
+    type: 关联类型
+    obj: 对象
+  templates:
+    label: 模板
+    name: 英文名称
+    cn_name: 中文名称
+    nest: 嵌套属性
+    image: 图像
+    index: 列表
+    new: 新建
+    edit: 编辑
+    show: 详情
+    form: 表单
+    js: js
+    scss: scss
+    admin: 添加到后台
+  natures:
+    label: ''
+    name: 英文属性名
+    type: 类型
+    title: 中文属性名
+    tag: 标签
+  birds:
+    label: 小鸟
+    name: 名称
+    age: 年龄
+  statistics:
+    label: 数据统计
+  spiders:
+    label: 爬虫
+    link: 请求地址
+    cookie: cookie
+    agent: agent
+    content_type: content_type
+    page: 页码
+    file: 文件名带后缀
+    referer: referer
+    host: host
+    redirection: redirection
+  selectors:
+    label: 选择器
+    name: 选择器名称
+    category: 类型
+    title: 标题
+    categories:
+      text:
+        info: 文本
+        value: '0'
+      attr:
+        info: 属性
+        value: '1'
+      file:
+        info: 文件
+        value: '2'
+  websites:
+    label: 网站
+    name: 公司名称
+    style: 风格
+    color: 配色
+    navbar: 导航条
+    mastheader: 首屏
+    footer: 页脚
+    logo: 公司logo
+  navbars:
+    label: 导航条
+    name: 名称
+  pages:
+    label: 网页
+    name: 名称
+    draft: 草稿
+    keyword: 关键词
+    block_order: 版块排序
+  blocks:
+    label: 版块
+    name: 标题
+    title_two: 二级标题
+    background: 背景色
+    color: 字体颜色
+    reset_icon: 重置图标
+  layouts:
+    label: 布局
+    name: 名称
+  block_contents:
+    label: 版块内容
+    title: 标题
+    description: 描述
+  carousels:
+    label: 轮播
+    name: 名称
+  formats:
+    label: 布局
+    name: 名称
+  title_ones:
+    label: 一级标题
+    tag: 标签
+    align: 对齐
+    color: 字体颜色
+    weight: 粗细
+    font: 字体
+    background: 背景
+    line_height: 行高
+    letter_spacing: 字间距
+  title_twos:
+    label: 二级标题
+    tag: 标签
+    align: 对齐
+    color: 字体颜色
+    font: 字体
+    background: 背景色
+    weight: 字体粗细
+    line_height: 行高
+    letter_spacing: 字间距
+  title_threes:
+    label: 三级标题
+    tag: 标签
+    align: 对齐
+    color: 字体颜色
+    font: 字体
+    background: 背景色
+    weight: 粗细
+    line_height: 行高
+    letter_spacing: 字间距
+  tags:
+    h1:
+      info: h1
+      value: '1'
+    h2:
+      info: h2
+      value: '2'
+    h3:
+      info: h3
+      value: '3'
+    h4:
+      info: h4
+      value: '4'
+    h5:
+      info: h5
+      value: '5'
+    h6:
+      info: h6
+      value: '6'
+    p:
+      info: p
+      value: '7'
+    small:
+      info: small
+      value: '8'
+  aligns:
+    left:
+      info: text-left
+      value: '0'
+    center:
+      info: text-center
+      value: '1'
+    right:
+      info: text-right
+      value: '2'
+    justify:
+      info: text-justify
+      value: '3'
+  colors:
+    primary:
+      info: text-primary
+      value: '0'
+    info:
+      info: text-info
+      value: '1'
+    danger:
+      info: text-danger
+      value: '2'
+    warning:
+      info: text-warning
+      value: '3'
+    success:
+      info: text-success
+      value: '4'
+    body:
+      info: text-body
+      value: '8'
+    dark:
+      info: text-dark
+      value: '7'
+    secondary:
+      info: text-secondary
+      value: '5'
+    black-50:
+      info: text-black-50
+      value: '11'
+    light:
+      info: text-light
+      value: '6'
+    white:
+      info: text-white
+      value: '10'
+  bgs:
+    default:
+      info: ''
+      value: ''
+    primary:
+      info: bg-primary
+      value: '0'
+    info:
+      info: bg-info
+      value: '1'
+    danger:
+      info: bg-danger
+      value: '2'
+    warning:
+      info: bg-warning
+      value: '3'
+    success:
+      info: bg-success
+      value: '4'
+    secondary:
+      info: bg-secondary
+      value: '5'
+    light:
+      info: bg-light
+      value: '6'
+    dark:
+      info: bg-dark
+      value: '7'
+    muted:
+      info: bg-muted
+      value: '8'
+    white:
+      info: bg-white
+      value: '9'
+    transparent:
+      info: bg-transparent
+      value: '10'
+  weights:
+    default:
+      info: ''
+      value: ''
+    bold:
+      info: font-weight-bold
+      value: '0'
+    bolder:
+      info: font-weight-bolder
+      value: '1'
+    normal:
+      info: font-weight-normal
+      value: '2'
+    light:
+      info: font-weight-light
+      value: '3'
+    lighter:
+      info: font-weight-lighter
+      value: '4'
+  fonts:
+    default:
+      info: ''
+      value: ''
+    italic:
+      info: font-italic
+      value: '0'
+    title_one_font_45:
+      info: title-one-font-45
+      value: '1'
+    title_two_font_30:
+      info: title-two-font-30
+      value: '2'
+  line_heights:
+    default:
+      info: ''
+      value: ''
+    height_5:
+      info: line-height-5px
+      value: '5'
+    height_36:
+      info: line-height-36px
+      value: '36'
+  letter_spacings:
+    default:
+      info: ''
+      value: ''
+    spacing_5:
+      info: '5'
+      value: '5'
+  block_layouts:
+    one_column:
+      info: 一列
+      value: '1'
+    two_column:
+      info: 两列
+      value: '2'
+    three_column:
+      info: 三列
+      value: '3'
+    four_column:
+      info: 四列
+      value: '4'
+    six_column:
+      info: 六列
+      value: '6'
+  contacts:
+    label: 联系方式
+    phone: 电话
+    wechat: 微信
+    address: 地址
+    email: 邮箱
+    qq: QQ
+    introduce: 公司简介
+  icon_libraries:
+    label: 图标库
+    category: 分类
+    scene: 场景
+    style: 风格
+    file_name: 文件名
+    tag: 标签
+    line_type: 0
+    area_type: 1
+  icon_category:
+    international: 国际
+    sports: 体育
+    entertainment: 娱乐
+    society: 社会
+    finance: 财经
+    current_affairs: 时事
+    science_technology: 科技
+    emotion: 情感
+    automobile: 汽车
+    education: 教育
+    fashion: 时尚
+    games: 游戏
+    military: 军事
+    tourism: 旅游
+    food: 美食
+    culture: 文化
+    health: 健康养生
+    funny: 搞笑
+    home: 家居
+    animation: 动漫
+    pet: 宠物
+    mother_child: 母婴育儿
+    constellation: 星座运势
+    history: 历史
+    music: 音乐
+    synthesis: 综合
+  website_styles:
+    pure:
+      info: 清新
+      value: '1'
+    gradient:
+      info: 渐变
+      value: '0'
+    flat:
+      info: 扁平
+      value: '2'
+  color_styles:
+    pure:
+      info: 纯色
+      value: '1'
+    gradient:
+      info: 渐变
+      value: '0'
+  website_colors:
+    red:
+      info: 红色
+      value: '0'
+    orange:
+      info: 橙色
+      value: '1'
+    yellow:
+      info: 黄色
+      value: '2'
+    green:
+      info: 绿色
+      value: '3'
+    cyan:
+      info: 青色
+      value: '4'
+    blue:
+      info: 蓝色
+      value: '5'
+    purple:
+      info: 紫色
+      value: '6'
+  subunits:
+    label: 组件
+    html: Html
+    css: Css
+    js: Js
+    name: 名称
+    tag: 标签
+    type: 类型
+    min_length: 文本最小长度
+    max_length: 文本最大长度
+  subunit_icon_types:
+    icon_type:
+      info: 图标
+      value: '0'
+    image_type:
+      info: 图片
+      value: '1'
+  subunit_types:
+    navbar:
+      info: 导航条
+      value: '0'
+    mastheader:
+      info: 首屏
+      value: '1'
+    section:
+      info: 内容
+      value: '2'
+    footer:
+      info: 页脚
+      value: '3'
+  color_libraries:
+    label: 颜色库
+    category: 分类
+    style: 风格
+    color_value: 颜色值
+    tag: 标签
+  image_libraries:
+    label: 图片库
+    category: 分类
+    style: 风格
+    file_name: 文件名
+    width: 宽度
+    height: 高度
+    tag: 标签
+  documents:
+    label: 网站历史版本
+    title: 标题
+    erb_link: 模板地址
+    html_link: 网站地址
+    status: 状态
+    status_none: 0
+    status_process: 10
+    status_success: 101
+    status_fail: 70
+  articles:
+    label: 文章
+    lang: 语言
+    title: 文章名
+    category: 目录
+    address: 地址
+    vol: 大小
+    desc: 简要描述
+  article_contents:
+    label: 文章内容
+    title: 标题
+    desc: 描述
+    tag: 标签
+  ocrs:
+    label: 文字识别
+    general: 0
+    form: 1
+    webimage: 2
+    handwritten: 3
+    formula: 4
+    number: 5
+    stamp: 6
+    finance: 7
+    general_title: 通用
+    form_title: 表格
+    webimage_title: 网络图片
+    handwritten_title: 手写
+    formula_title: 公式 
+    number_title: 数字 
+    stamp_title: 印章 
+    finance_title: 财会 
+test:
+  admins: *1
+  users: *2
+  roles: *3
+  permissions: *4
+  citrines: *5
+  awards: *6
+  wares: *23
+  trees: *7
+  leafs: *8
+  notices: *24
+  orders: *9
+  accounts: *10
+  consumes: *11
+  demands: *12
+  sells: *13
+  systems: *14
+  trade_orders: *15
+  extract_cashes: *16
+  share_pools: *17
+  pick_records: *18
+  trades: *19
+  levels: *20
+  teams: *21
+  tea_prices: *22
+production:
+  admins: *1
+  users: *2
+  roles: *3
+  permissions: *4
+  citrines: *5
+  awards: *6
+  wares: *23
+  trees: *7
+  leafs: *8
+  notices: *24
+  orders: *9
+  accounts: *10
+  consumes: *11
+  demands: *12
+  sells: *13
+  systems: *14
+  trade_orders: *15
+  extract_cashes: *16
+  share_pools: *17
+  pick_records: *18
+  trades: *19
+  levels: *20
+  teams: *21
+  tea_prices: *22

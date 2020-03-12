@@ -1,0 +1,40 @@
+./006ECMAScript5_6_7
+├── 视频
+│   ├── 01. _ECMAScript入门介绍.avi
+│   ├── 02. _ES5_严格模式.avi
+│   ├── 03. _ES5_json对象扩展.avi
+│   ├── 04. _ES5_Object对象方法扩展.avi
+│   ├── 05. _ES5_数组的扩展.avi
+│   ├── 06. _ES5_call,apply,bind用法详解.avi
+│   ├── 07. _ES6_let const关键字.avi
+│   ├── 08. _ES6_变量的解构赋值.avi
+│   ├── 09. _ES6_模板字符串.avi
+│   ├── 10. _ES6_对象的简写方式.avi
+│   ├── 11. _ES6_箭头函数详解.avi
+│   ├── 12. _ES6_三点运算符.avi
+│   ├── 13. _ES6_形参默认值.avi
+│   ├── 14. _ES6_promise对象原理详解.avi
+│   ├── 15. _ES6_promise对象案例练习.avi
+│   ├── 16. _ES6_Symbol属性介绍_01.avi
+│   ├── 17. _ES6_Symbol属性介绍_02.avi
+│   ├── 18. _ES6_iterator接口机制_01.avi
+│   ├── 19. _ES6_iterator接口机制_02.avi
+│   ├── 20. _ES6_iterator接口机制_03.avi
+│   ├── 21. _ES6_Generator函数简介_01.avi
+│   ├── 22. _ES6_Generator函数简介_02.avi
+│   ├── 23. _ES6_Generator函数应用_03.avi
+│   ├── 24. _ES6_async函数详解及应用_01.avi
+│   ├── 25. _ES6_async函数应用技巧使用_02.avi
+│   ├── 26. _ES6_class类使用详解.avi
+│   ├── 27. _ES6_字符串，数组的扩展.avi
+│   ├── 28. _ES6_数组方法的扩展.avi
+│   ├── 29. _ES6_对象方法的扩展.avi
+│   ├── 30. _ES6_深度克隆_01.avi
+│   ├── 31. _ES6_深度克隆_02.avi
+│   ├── 32. _ES6_set，map容器详解.avi
+│   ├── 33. _ES6_for of用法详解.avi
+│   └── 34. _ES7_方法介绍.avi
+└── 源码
+    └── code.zip
+
+2 directories, 35 files

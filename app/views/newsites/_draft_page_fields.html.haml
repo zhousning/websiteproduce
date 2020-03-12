@@ -1,0 +1,14 @@
+.tab-pane.fade.show{:id => "tabs-icons-text-#{f.website_page_id}", "aria-labelledby" => "tabs-icons-text-#{f.website_page_id}-tab", :role => "tabpanel"}
+  .nested-fields
+    .field.d-inline
+      .row
+        .col-sm-12
+          %ol.tree-structure
+            = f.fields_for :blocks do |block|
+              = render 'block_fields', f: block
+            .links.w-100.px-2
+              = link_to_add_association f, :blocks, :class => "btn btn-block btn-lg btn-outline-default rounded-0" do
+                %i.fa.fa-plus.fa-5x
+    -#
+      = f.text_area :draft, :class => "edit-textarea form-control border-radius-zero", :id => "kindeditor-content"
+      = link_to_remove_association "删除", f, :class => "btn btn-danger btn-sm d-inline"

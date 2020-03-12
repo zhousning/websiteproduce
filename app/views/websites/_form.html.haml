@@ -1,0 +1,88 @@
+- provide(:title, t('.title'))
+
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      %h3
+        %i.fa.fa-gg.fa-3x
+        网站信息 定制网页
+
+  .row.p-5.mb-5.border.border-primary
+    .col-sm-12
+      = form_for @website, :builder => WebsiteFormBuilder do |f|
+        - if @website.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@website.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @website.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.websites.name, :class => "col-sm-2 text-right"
+          .col-sm-10
+            = f.text_field :name, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.contacts.address, :class => "col-sm-2 text-right"
+          .col-sm-10
+            = f.text_field :address, :class => "form-control"
+
+        .form-group.row
+          = f.label Setting.contacts.phone, :class => "col-sm-2 text-right"
+          .col-sm-4
+            = f.number_field :phone, :class => "form-control"
+          
+          = f.label Setting.contacts.wechat, :class => "col-sm-2 text-right"
+          .col-sm-4
+            = f.text_field :wechat, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.contacts.qq, :class => "col-sm-2 text-right"
+          .col-sm-4
+            = f.number_field :qq, :class => "form-control"
+          = f.label Setting.contacts.email, :class => "col-sm-2 text-right"
+          .col-sm-4
+            = f.email_field :email, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.contacts.introduce, :class => "col-sm-2 text-right"
+          .col-sm-10
+            = f.text_area :introduce, :class => "form-control", :rows => "10"
+      
+        .form-group.row
+          = f.label "Logo图", :class => "col-sm-2 control-label"
+          .col-sm-10
+            %label.newbtn
+              = image_tag f.logo_image, :class => "blah"
+              = f.file_field :logo, :accept => "image/png, image/jpeg, image/gif", :class => "select-file", :onchange => "readURL(this);"
+      
+        %hr
+        .form-group.row
+          .col-sm-12.mb-3
+            %h4.text-center
+              添加网页
+          .col-sm-12
+            .row
+              = f.fields_for :pages do |page|
+                = render 'page_fields', f: page 
+              .links.w-100.px-2
+                = link_to_add_association f, :pages, :class => "btn btn-block btn-lg btn-outline-primary" do
+                  %i.fa.fa-plus.fa-5x
+      
+        .form-group.row
+          .col-sm-3.offset-sm-9
+            = f.submit '保存', :class => "btn btn-success"
+        -#
+          .form-group.row
+            = f.label Setting.websites.mastheader, :class => "col-sm-3 text-right"
+            .col-sm-9
+              = f.select :mastheader, options_for_subunit_mastheader, {:include_blank=>true}, {:class=>"form-control"}
+          .form-group.row
+            = f.label "添加导航条", :class => "col-sm-1 control-label"
+            .col-sm-11
+              = f.fields_for :navbars do |navbar|
+                = render 'navbar_fields', f: navbar 
+              .links
+                = link_to_add_association "添加", f, :navbars, :class => "btn btn-success"
+      
+

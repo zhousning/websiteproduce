@@ -1,0 +1,26 @@
+%li
+  %span.num
+    1
+  .nested-fields
+    .field.d-inline
+      .card.rounded-0.border.border-primary
+        .card-header.rounded-0.border-0
+          .row
+            .col-sm-1.offset-11.text-right
+              = link_to_remove_association f, :class => "text-default d-inline" do
+                %i.fa.fa-remove.fa-2x
+        .card-body.py-0
+          .form-group
+            .col-sm-12
+              = f.text_field :title, :class => "form-control", :placeholder => '一级标题'
+          .form-group
+            .col-sm-12
+              = f.text_field :title_two, :class => "form-control", :placeholder => '二级标题'
+          .form-group
+            %ol
+              %li.row
+                = f.fields_for :block_contents do |block_content|
+                  = render 'block_content_fields', f: block_content 
+                .links.m-3
+                  = link_to_add_association f, :block_contents, :class => "btn btn-lg btn-outline-primary" do
+                    %i.fa.fa-plus.fa-5x

@@ -1,0 +1,32 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.color_libraries.category
+              %th 
+                = Setting.color_libraries.style
+              %th 
+                = Setting.color_libraries.color_value
+              %th 
+                = Setting.color_libraries.tag
+          %tbody
+            %tr
+            
+              %td
+                = @color_library.category
+              %td
+                = @color_library.style
+              %td
+                = @color_library.color_value
+              %td
+                = @color_library.tag
+    
+
+= render "layouts/control_panel"

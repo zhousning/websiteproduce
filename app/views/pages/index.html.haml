@@ -1,0 +1,65 @@
+- provide(:title, t('.title'))
+
+.container-fluid
+  .row
+    = render "layouts/control_sidebar"
+    %main.col-md-9.ml-sm-auto.col-lg-10.p-3{:role => "main"}
+      .card.shadow.rounded-0.mb-3
+        .card-header.bg-info.text-white.rounded-0
+          %h5
+            = link_to websites_path, :class => "button button-border button-rounded button-caution pull-right  bg-white" do
+              = fa_icon " chevron-left", text: Setting.systems.btn_back, right: false 
+        .card-body
+          .container-fluid
+            .row
+              .col-sm-12
+                %h3
+                  %i.fa.fa-balance-scale.fa-3x
+                  定义你的导航菜单
+                  %span.text-danger
+                    (!菜单层级请勿超过两级)
+
+            .row.p-5.mb-5.border.border-primary
+              .col-sm-4
+                %table.text-center.table-bordered.table-sm
+                  %thead.thead-light
+                    %tr
+                      %th{:scope => "col"}
+                        = Setting.pages.name
+                      %th{:scope => "col"}
+                        上级菜单
+                      %th{:scope => "col"}
+                  %tbody
+                    - @pages.each_with_index do |page, index|
+                      %tr
+                        %td
+                          = page.name
+                        %td
+                          = select_tag "page_parent", options_for_newsite_draft_navbar(@pages, page) , :include_blank => true, :class=>"form-control", :'data-current' => "#{page.id}"
+                        %td
+                          .container-fluid
+                            .row
+                              = link_to website_page_path(@website, index), :class => "text-info col" do
+                                = fa_icon "search"
+                              = link_to edit_website_page_path(@website, index), :class => "text-success col" do
+                                = fa_icon "edit"
+              .col-sm-8
+                .tree
+                  %ul
+                    %li
+                      %a{:href => "#"}
+                        = @website.name
+                      %ul#menu-tree-container
+                        - @menus.each do |menu|
+                          %li
+                            %a{:href => "#"}
+                              = menu.name
+                            - if menu.children.size > 0
+                              %ul
+                                - menu.children.each.each do |item|
+                                  %li
+                                    %a{:href => "#"}
+                                      = item.name
+                              -#
+                                = link_to page(@website) , :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                                  = fa_icon "trash"

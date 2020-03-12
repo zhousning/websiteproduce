@@ -1,0 +1,60 @@
+.container-fluid
+  .row.justify-content-sm-center
+    .col-sm-12
+      = form_for @block do |f|
+        - if @block.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@block.errors.count, "error")} prohibited this buyer from being saved:"
+            %ul
+              - @block.errors.full_messages.each do |msg|
+                %li= msg
+      
+        .form-group.row
+          = f.label Setting.blocks.name, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.text_field :name, :class => "form-control"
+          
+        .form-group.row
+          = f.label Setting.layouts.label, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :layout, options_for_layout, {:include_blank => true}, {:class => "form-control"}
+      
+        .form-group.row
+          = f.label Setting.subunits.label, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :subunit, options_for_subunit, {:include_blank => false}, {:class => "form-control"}
+
+        .form-row
+          .form-group.col.row
+            = f.label Setting.blocks.reset_icon, :class => "col-sm-3 text-right"
+            .col-sm-9
+              .form-check.form-check-inline
+                = f.radio_button :reset_icon, Setting.systems.status_en_yes, :class => "form-check-input"
+                = f.label Setting.systems.status_yes, :class => "form-check-label"
+              .form-check.form-check-inline
+                = f.radio_button :reset_icon, Setting.systems.status_en_no, :class => "form-check-input"
+                = f.label Setting.systems.status_no, :class => "form-check-label"
+
+        .form-group.row
+          = f.label Setting.blocks.background, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :background, options_for_background, {:include_blank => true}, {:class => "form-control"}
+
+        .form-group.row
+          = f.label Setting.blocks.color, :class => "col-sm-3 text-right"
+          .col-sm-9
+            = f.select :color, options_for_color, {:include_blank => false}, {:class => "form-control"}
+      
+        .form-group.row
+          = f.label "板块内容", :class => "col-sm-1 control-label"
+          .col-sm-11
+            = f.fields_for :block_contents do |block_content|
+              = render 'block_content_fields', f: block_content 
+            .links
+              = link_to_add_association "添加", f, :block_contents, :class => "btn btn-success"
+      
+        .form-group.row
+          .col-sm-3.offset-sm-2
+            = f.submit '保存', :class => "btn btn-success"
+          .col-sm-3.offset-sm-1
+            = link_to '返回', blocks_path, :class => "btn btn-danger"
