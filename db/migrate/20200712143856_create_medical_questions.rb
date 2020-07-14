@@ -10,6 +10,7 @@ class CreateMedicalQuestions < ActiveRecord::Migration
     
       t.text :analysis,  null: false, default: Setting.systems.default_str
       t.string :category,  null: false, default: Setting.systems.default_str
+      t.string :qst_type,  null: false, default: Setting.systems.default_str
     
 
     

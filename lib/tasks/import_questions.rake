@@ -65,16 +65,21 @@ def question_process(subject, file_path)
   
            contentHtml = Nokogiri::HTML(content)
            analysisHtml = Nokogiri::HTML(analysis)
-           qst_type = ''
+           major_name = ''
            answer = ''
            option_str = ''
            category = ''
+           qst_type = ''
+           
   
            tags.each do |t|
              if t['id'] == tagId
-               qst_type = t['name']
+               major_name = t['name']
              end
            end
+
+           mresult = major_name.match(/A1|A2|A3|B1|B2|B3/)
+           qst_type = mresult.nil? ? 'other' : mresult[0]
   
            count = 0 
            options.each_with_index do |option, index|
@@ -96,12 +101,12 @@ def question_process(subject, file_path)
              category = Setting.medical_questions.category_single
            end
 
-           @mdmajor = MedicalMajor.where(:name => qst_type, :medical_subject => subject)
+           @mdmajor = MedicalMajor.where(:name => major_name, :medical_subject => subject)
            if @mdmajor.blank?
-             @mdcmajor = MedicalMajor.create(:name => qst_type, :medical_subject => subject) 
+             @mdcmajor = MedicalMajor.create(:name => major_name, :medical_subject => subject) 
              MedicalQuestion.create(:category => category, :title => contentHtml.text, :option => option_str, :answer => answer, :analysis => analysisHtml.text, :medical_major => @mdcmajor) 
            else
-             MedicalQuestion.create(:category => category, :title => contentHtml.text, :option => option_str, :answer => answer, :analysis => analysisHtml.text, :medical_major => @mdmajor.first) 
+             MedicalQuestion.create(:category => category, :qst_type => qst_type, :title => contentHtml.text, :option => option_str, :answer => answer, :analysis => analysisHtml.text, :medical_major => @mdmajor.first) 
            end
          end
       end
@@ -112,7 +117,7 @@ end
 #folder = file_path + "/" + "题库解析版/" 
 #FileUtils.makedirs(folder) unless File.directory?(folder)
 #
-#target_file = folder + qst_type + '.txt'
+#target_file = folder + major_name + '.txt'
 #File.open(target_file, 'a+') do|f|
 #  result = contentHtml.text + "\r\n" +
 #    option_str + "\r\n" +

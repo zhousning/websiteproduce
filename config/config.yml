@@ -738,9 +738,20 @@ development:
     answer: 答案
     analysis: 解析
     category: 题型
-    category_single: '0' 
+    paper_total: 5
+    category_single: '0'
     category_multiple: '1'
-    category_other: '3' 
+    category_other: '3'
+    a1: A1
+    a2: A2
+    a3: A3
+    b1: B1
+    b2: B2
+    b3: b3
+    other: other
+  medical_drafts:
+    label: 医学试题抽题
+    name: 名字
 test:
   admins: *1
   users: *2

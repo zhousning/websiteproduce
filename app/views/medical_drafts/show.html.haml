@@ -1,0 +1,22 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid
+    .row
+      .col-md-12
+        %table.table.text-center.table-bordered
+          %thead
+            %tr
+            
+              %th 
+                = Setting.medical_drafts.name
+          %tbody
+            - @medical_draft.medical_majors.each do |m|
+              %tr
+                %td
+                  = m.name
+                %td
+                  = m.draft_majors.first.total
+    
+
+= render "layouts/control_panel"

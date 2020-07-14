@@ -1,8 +1,82 @@
 - provide(:title, t('.title'))
 
 .container-fluid
+  %h1
+    = Setting.medical_questions.a1
   .row
-    - @majors.each do |major|
+    - @A1s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.a2
+  .row
+    - @A2s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.a3
+  .row
+    - @A3s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.b1
+  .row
+    - @B1s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.b2
+  .row
+    - @B2s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.b3
+  .row
+    - @B3s.each do |major|
+      .col-md-2.mb-3
+        .row
+          .col-md-7
+            = major.name + '(' + major.medical_questions.count.to_s + ')'
+          .col-md-5
+            %input{:type=>'number', :name => major.name, :class=>'form-control'} 
+
+.container-fluid
+  %h1
+    = Setting.medical_questions.other
+  .row
+    - @others.each do |major|
       .col-md-2.mb-3
         .row
           .col-md-7

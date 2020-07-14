@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   end
 
   resources :medical_subjects, :only => [:index]
+  resources :medical_drafts do
+    get :organize, :on => :member
+  end
 
   resources :nlps do
     collection do
