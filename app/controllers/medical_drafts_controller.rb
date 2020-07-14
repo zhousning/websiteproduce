@@ -95,39 +95,44 @@ class MedicalDraftsController < ApplicationController
 
       @questions.each_with_index do |qsts, index|
         index = index + 1
-        puts index
-        result = ''
-        analysis = ''
+        result = [] 
         qsts.each do |q|
-          result += q.title + "\r\n" +
-            q.option + "\r\n\r\n"
-          analysis += 
-            '答案: ' + q.answer + "\r\n" +
-            '解析: ' + q.analysis + "\r\n\r\n"
+          hash = Hash.new
+          hash['title'] = q.title
+          hash['option'] = q.option
+          hash['answer'] = q.answer
+          hash['analysis'] = q.analysis
+          result << hash
         end
 
         target_file = paper_folder + '试卷'
-        analysis_file = paper_folder + '试卷'
         if name.match(/A1/) 
-          target_file += index.to_s + 'A1.txt'
-          analysis_file += index.to_s + 'A1解析.txt'
+          target_file += index.to_s + '-A1.yaml'
         elsif name.match(/A2/) 
-          target_file += index.to_s + 'A2.txt'
-          analysis_file += index.to_s + 'A2解析.txt'
+          target_file += index.to_s + '-A2.yaml'
         elsif name.match(/A3/) 
-          target_file += index.to_s + 'A3.txt'
-          analysis_file += index.to_s + 'A3解析.txt'
+          target_file += index.to_s + '-A3.yaml'
         elsif name.match(/B1/) 
-          target_file += index.to_s + 'B1.txt'
-          analysis_file += index.to_s + 'B1解析.txt'
+          target_file += index.to_s + '-B1.yaml'
         end
 
         File.open(target_file, 'a+') do|f|
-          f.write(result)
+          YAML.dump(result, f)
         end 
-        File.open(analysis_file, 'a+') do|f|
-          f.write(analysis)
-        end 
+      end
+    end
+
+    Dir.foreach(paper_folder) do |file|
+      path = paper_folder + "/"+file
+      if file !="." and file !=".." && !File.directory?(path)
+        str = "---"
+        File.open(path, "r") do |lines|
+          buffer = lines.read.gsub(/---/,"")
+          str += buffer
+        end
+        File.open(path,"w") do|l|
+          l.write(str)    
+        end
       end
     end
 
@@ -156,3 +161,40 @@ class MedicalDraftsController < ApplicationController
   
 end
 
+#      @questions.each_with_index do |qsts, index|
+#        index = index + 1
+#        puts index
+#        result = ''
+#        analysis = ''
+#        qsts.each do |q|
+#          result += q.title + "\r\n" +
+#            q.option + "\r\n\r\n"
+#          analysis += 
+#            '答案: ' + q.answer + "\r\n" +
+#            '解析: ' + q.analysis + "\r\n\r\n"
+#        end
+#
+#        target_file = paper_folder + '试卷'
+#        analysis_file = paper_folder + '试卷'
+#        if name.match(/A1/) 
+#          target_file += index.to_s + 'A1.txt'
+#          analysis_file += index.to_s + 'A1解析.txt'
+#        elsif name.match(/A2/) 
+#          target_file += index.to_s + 'A2.txt'
+#          analysis_file += index.to_s + 'A2解析.txt'
+#        elsif name.match(/A3/) 
+#          target_file += index.to_s + 'A3.txt'
+#          analysis_file += index.to_s + 'A3解析.txt'
+#        elsif name.match(/B1/) 
+#          target_file += index.to_s + 'B1.txt'
+#          analysis_file += index.to_s + 'B1解析.txt'
+#        end
+#
+#        File.open(target_file, 'a+') do|f|
+#          f.write(result)
+#        end 
+#        File.open(analysis_file, 'a+') do|f|
+#          f.write(analysis)
+#        end 
+#      end
+#    end
