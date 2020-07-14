@@ -1,0 +1,45 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            
+              %th{:scope => "col"}
+                = Setting.medical_questions.title
+              %th{:scope => "col"}
+                = Setting.medical_questions.option
+              %th{:scope => "col"}
+                = Setting.medical_questions.answer
+              %th{:scope => "col"}
+                = Setting.medical_questions.analysis
+              %th{:scope => "col"}
+          %tbody
+            - @medical_questions.each_with_index do |medical_question, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              
+                %td
+                  = medical_question.title
+                %td
+                  = medical_question.option
+                %td
+                  = medical_question.answer
+                %td
+                  = medical_question.analysis
+                %td
+                  .container-fluid
+                    .row
+                      = link_to medical_question_path(medical_question), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_medical_question_path(medical_question), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to medical_question, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                        = fa_icon "trash"
+
+= render "layouts/control_panel"

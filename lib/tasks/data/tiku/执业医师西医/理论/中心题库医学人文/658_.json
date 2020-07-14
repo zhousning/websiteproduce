@@ -1,0 +1,1536 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": [
+    {
+      "id": 9717,
+      "createTime": "2019-06-27 13:46:02",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 17,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某医学院曾收治三例分别在院外接受过试验性肝穿刺引起急性腹膜炎的病人。术中医生在抽出脓液</span>5—10ml后，即拔除穿刺针，术后未作常规处理，2小时后呈急腹症症状。结果二例治愈，一例死亡。对试验性肝穿刺的下列说法中错误的是&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">由于在试验过程中患者或受试者处于弱势地位</span>,其生命、健康、身体、隐私、尊严等人身利益有可能在研究中受到侵犯,特别在面对高风险性.不确定性试验研究时,可能随时面临生命的危险,因此国际规范以及各国通行惯例中都强调,在人体生物医学研究领域中,受试者的上述权益应当受到尊重和合理保护。这也构成了人体实验中的伦理考量的最为重要方面。所以C错。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42782,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:46:02",
+          "updateTime": "2019-06-27 13:46:02",
+          "isTrue": false,
+          "questionId": 9717,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">肝穿刺应该由有训练的医生进行，一定要避免盲目性和危险性</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42783,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:46:02",
+          "updateTime": "2019-06-27 13:46:02",
+          "isTrue": false,
+          "questionId": 9717,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">不论穿刺动机如何，只要造成事故，它的价值就是负价值</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42784,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:46:02",
+          "updateTime": "2019-06-27 13:46:02",
+          "isTrue": true,
+          "questionId": 9717,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">只要动机是好的，虽然是事故，它也有一定的正价值</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42785,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:46:02",
+          "updateTime": "2019-06-27 13:46:02",
+          "isTrue": false,
+          "questionId": 9717,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医学研究的试验设计必须严密</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42786,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:46:02",
+          "updateTime": "2019-06-27 13:46:02",
+          "isTrue": false,
+          "questionId": 9717,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">试验前必须经有关专家审定是符合科学要求</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9712,
+      "createTime": "2019-06-27 13:44:27",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 16,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某女患头痛数月，遇上感冒和月经来潮时疼痛加重，于是出于彻底检查的目的来院坚决要求作</span>CT检查，被医师拒绝。医师开出脑电图检查单和请耳鼻喉科会诊单。病人大为不满。为形成正常医患关系，该医师应该&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医患关系是信任托付的契约关系由于医患双方在医学知识的掌握上的差距和患者求医时的弱势心理</span>,医患之间存在着现实的不平等状况,病人只能在信任的基础,到医院把健康和生命托付于医务人员,医务人员在接受委托后,应做到真诚相待并努力减轻患者的身心痛苦。所以C对</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42757,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:44:27",
+          "updateTime": "2019-06-27 13:44:27",
+          "isTrue": false,
+          "questionId": 9712,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">维持契约关系，完全按病人要求办，开单作</span>CT检查</span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42758,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:44:27",
+          "updateTime": "2019-06-27 13:44:27",
+          "isTrue": false,
+          "questionId": 9712,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">维持契约关系，坚决按医生意见办，脑电图检查后再定</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42759,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:44:27",
+          "updateTime": "2019-06-27 13:44:27",
+          "isTrue": true,
+          "questionId": 9712,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">维持契约信托关系，说服患者先行体格检查再定</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42760,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:44:27",
+          "updateTime": "2019-06-27 13:44:27",
+          "isTrue": false,
+          "questionId": 9712,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">维持信托关系，对不信赖者拒绝接诊</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42761,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:44:27",
+          "updateTime": "2019-06-27 13:44:27",
+          "isTrue": false,
+          "questionId": 9712,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">维持信托关系，先查</span>CT和脑电图、进行会诊，然后体检</span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9708,
+      "createTime": "2019-06-27 13:43:16",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 15,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">德国一位女牙医助理马里翁在一次车祸中受重伤，送到医院后被判定为脑死亡，后来的全面检查表明：当时该</span>“患者”腹中4个月的胎儿完全正常，如果“患者”凭借现代医术使植物人状态长期维持下去，就可以保证胎儿发育成熟。直至出生；如果让“患者”体面地死去，就必须撤掉生命维持系统。这个难题</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">脑死亡意味着可以放弃无效的抢救，让患者死得有尊严。其次，可以适时地终止无效的医疗救治，减少无意义的医疗资源消耗。但</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">因</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">患者腹中胎儿</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">正常，患者又因脑死亡无自主意识选择是否</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">保胎</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">，所以</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">这是</span></span><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医学中能不能做与伦理上应不应该做的矛盾</span></span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42737,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:43:16",
+          "updateTime": "2019-06-27 13:43:16",
+          "isTrue": true,
+          "questionId": 9708,
+          "content": "<p><span style=\"font-family: 楷体;\">医学中能不能做与伦理上应不应做的矛盾</span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42738,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:43:16",
+          "updateTime": "2019-06-27 13:43:16",
+          "isTrue": false,
+          "questionId": 9708,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">临床诊断技术的问题</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42739,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:43:16",
+          "updateTime": "2019-06-27 13:43:16",
+          "isTrue": false,
+          "questionId": 9708,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">临床治疗技术的问题</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42740,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:43:16",
+          "updateTime": "2019-06-27 13:43:16",
+          "isTrue": false,
+          "questionId": 9708,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">服务态度的问题</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42741,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:43:16",
+          "updateTime": "2019-06-27 13:43:16",
+          "isTrue": false,
+          "questionId": 9708,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医药卫生资源宏观分配的矛盾</span>,要求医学服务认真解决</span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9701,
+      "createTime": "2019-06-27 13:41:40",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 14,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某女患者，</span>59岁，因患肝硬化腹腔积液，肝硬化失代偿期住进某市中医院，经治疗病情未见改善，反而加重，出现肝性脑病。多次昏迷。处于濒死状态。其子在得知母亲已治愈无望时，向主管医师提出书面请求：为其母实施“安乐死”，以尽快解除病人濒死前的剧痛。在家属再三请求之下，主管医师于1986年6月28日下了医嘱，先后两次注射复方冬眠灵l75mg，病人安静地死去。之后主管医师及病人的儿子二人均以故意杀人罪被起诉立案，主管医师先后两次被收审，并被逮捕羁押一年，后经市人民法院多次公开审理诉讼后，才宣告主管医师无罪释放。从医学伦理方面对该医师所做所为的正确评价是</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\">“救死扶伤、治病救人”历来被从医者视为天经地义之事，是医德、医道的根本体现，直到今天，仍然是医护人员必须恪守的基本原则。在许多医务工作者的心目中，医生只有尽可能为病人寻求、创造生的希望与光明的义务，没有主动结束患者生命的权利。安乐死的提出给传统经典的医道以莫大的冲击，乃至对人道主义本身的见解也产生了歧义:一方面是坚持医学的人道主义就是“救死扶伤”，另一方面则认为以安乐死方式解除临终患者的极度痛苦也是人道主义的体现。这使得对安乐死的伦理评价陷于两难的境地。有的反对者正是从这一.两难的前提出发提出看法，他们认为，如允许安乐死，一者会造成伦理原则的冲突和观念上的混乱;二来会使医务人员在医疗实践中发生角色混淆，心理上也不堪承受;再者，还容易使患者产生医务人员草率医治、不负责任的担忧，削弱医患之间信任合作的基础。如何使医生与患者都能接受“救死”与“优死”致的观念，并在医疗实践中把握好尺度，是一件 难事。所以这道题是医学决策与伦理判断之间的矛盾。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42702,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:41:40",
+          "updateTime": "2019-06-27 13:41:40",
+          "isTrue": false,
+          "questionId": 9701,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">完全正确，其选择在医学上有充分依据</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42703,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:41:40",
+          "updateTime": "2019-06-27 13:41:40",
+          "isTrue": false,
+          "questionId": 9701,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">完全错误，医师实行安乐死与杀人无异</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42704,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:41:40",
+          "updateTime": "2019-06-27 13:41:40",
+          "isTrue": false,
+          "questionId": 9701,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">法律允许，但在伦理上是成问题的</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42705,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:41:40",
+          "updateTime": "2019-06-27 13:41:40",
+          "isTrue": false,
+          "questionId": 9701,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">法律允许，在伦理上也是说得通的</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42706,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:41:40",
+          "updateTime": "2019-06-27 13:41:40",
+          "isTrue": true,
+          "questionId": 9701,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">没有处理好医学决策与伦理判断之间的矛盾，是有着严重的伦理问题的</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9695,
+      "createTime": "2019-06-27 13:39:53",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 13,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">一位</span>50多岁男患者，患慢支肺气肿多年，某日上午因用力咳嗽，突感胸痛气促，立即被送到医院急诊科。体检发现：血压100／70 mmHg，呼吸120次/分，烦躁，唇、指发绀，气管明显偏左，右侧胸廓饱满，叩诊鼓音，呼吸音明显减弱。拟诊右侧气胸，未作相应处理，即送放射科作胸透。透视完后病人出现潮式呼吸，未及抢救就死亡了。为防止类似现象，应该&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医德审慎是指医务人员在为病人服务的过程中，处事慎重、严谨、周密、准确、无误。医德审慎的深层本质与胆识一样，它既是医者内心信念和良心的具体表现，又是医者对患者和社会的义务感、责任感的总体表现，是对病人高度负责的精神和严谨的科学作风的有机结合。该患者呼吸音明显减弱，首先应该处置气胸，改善呼吸后再做检查。</span></span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42672,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:39:53",
+          "updateTime": "2019-06-27 13:39:53",
+          "isTrue": false,
+          "questionId": 9695,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">充分检查，明确诊断，不伤害病人</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42673,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:39:53",
+          "updateTime": "2019-06-27 13:39:53",
+          "isTrue": false,
+          "questionId": 9695,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">依据症状，请相关医生会诊作决策，不伤害病人</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42674,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:39:53",
+          "updateTime": "2019-06-27 13:39:53",
+          "isTrue": true,
+          "questionId": 9695,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">当机立断。审慎地作出诊断并给以处置性穿刺，有利病人</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42675,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:39:53",
+          "updateTime": "2019-06-27 13:39:53",
+          "isTrue": false,
+          "questionId": 9695,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">迅速判断并确定恰当目标，作出恰当的医疗决策，有利病人</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42676,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:39:53",
+          "updateTime": "2019-06-27 13:39:53",
+          "isTrue": false,
+          "questionId": 9695,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">先行观察，再作处理，有利病人</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9689,
+      "createTime": "2019-06-27 13:38:11",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 12,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">一位</span>3岁病儿患急性菌痢住进医院，经治疗本已好转，行将出院。其父母觉得,小儿虚弱。要求输血。碍于情面，医生同意了。可护士为了快点交班。提议给予静脉推注输血。当时病儿哭闹，医护齐动手给他输血过程中。病儿突发心跳骤停死亡。此案例中医护人员的伦理过错是&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">有利原则不仅要求我们不伤害人，而且要求我们促进他们的健康和福利。这道题违背了有利原则，没有促进患儿健康。而且根据输血法适应症，该患儿未必需要输血。违反操作规定。</span></span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42642,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:38:11",
+          "updateTime": "2019-06-27 13:38:11",
+          "isTrue": false,
+          "questionId": 9689,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">无知，无原则，违背了有利病人的原则</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42643,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:38:11",
+          "updateTime": "2019-06-27 13:38:11",
+          "isTrue": false,
+          "questionId": 9689,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">无知，无原则，违背了人道主义原则</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42644,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:38:11",
+          "updateTime": "2019-06-27 13:38:11",
+          "isTrue": true,
+          "questionId": 9689,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">曲解家属自主权，违反操作规程，违背了有利病人的原则</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42645,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:38:11",
+          "updateTime": "2019-06-27 13:38:11",
+          "isTrue": false,
+          "questionId": 9689,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">曲解家属自主权，违反操作规程，违背了不伤害病人的原则</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42646,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:38:11",
+          "updateTime": "2019-06-27 13:38:11",
+          "isTrue": false,
+          "questionId": 9689,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">曲解家属自主权，违反操作规程，违背了人道主义原则</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9685,
+      "createTime": "2019-06-27 13:36:58",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 11,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某中年男患者因心脏病发作被送到急诊室，症状及检查结果均明确提示心肌梗死。患者很清醒，但拒绝住院，坚持要回家。此时医生应该</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">当患者拒绝治疗时，如晚期肿瘤患者或危重症患者不愿继续接受治疗时，患者有权拒绝治疗，但这种拒绝必须合乎以下条件是理智的决定</span>;医生已全面陈述利害与后果;符合实际的选择。倘若拒绝治疗会给患者带来严重后果或不可挽回的损失时，医生有权在作好认真解释的前提下进行干涉，如对临床精神病患者和自杀未遂等患者。所以应尽力劝导患者住院，无效时行使干涉权。&nbsp;</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42622,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:36:58",
+          "updateTime": "2019-06-27 13:36:58",
+          "isTrue": false,
+          "questionId": 9685,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">尊重患者自主权，自己无任何责任，同意他回家</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42623,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:36:58",
+          "updateTime": "2019-06-27 13:36:58",
+          "isTrue": false,
+          "questionId": 9685,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">尊重患者自主权，但应尽力劝导患者住院，无效时办好相关手续</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42624,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:36:58",
+          "updateTime": "2019-06-27 13:36:58",
+          "isTrue": true,
+          "questionId": 9685,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">尊重患者自主权，但应尽力劝导患者住院，无效时行使干涉权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42625,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:36:58",
+          "updateTime": "2019-06-27 13:36:58",
+          "isTrue": false,
+          "questionId": 9685,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">行使医生自主权，为治救病人，强行把患者留在医院</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42626,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:36:58",
+          "updateTime": "2019-06-27 13:36:58",
+          "isTrue": false,
+          "questionId": 9685,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">行使家长权，为治病救人，强行把患者留在医院</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9682,
+      "createTime": "2019-06-27 13:35:46",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 10,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某肝癌患者病情已到晚期，处于极度痛苦之中，自认为是肝硬化，寄希望于治疗。病情进展和疼痛发作时，多次要求医生给以明确说法和治疗措施。此时，医生最佳的伦理选择应该是</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医学道德也不例外</span>,诚实与讲真话自始至终是临床实践工作中评判医务人员道德水准的重要尺度之一。其主要含义为:病人与医生之间的交流应当是诚实的,这是一种美德,是医患之间真诚关系的基础。病人要对医生讲真话,如实而不隐瞒地将自己病情告诉医生;医生说话应以事实为依据,应真实地告诉病人有关诊疗情况(除例外情况之外)。所以应该正确对待保密与讲真话的关系，经家属同意后告知实情，重点减轻病痛。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42607,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:35:46",
+          "updateTime": "2019-06-27 13:35:46",
+          "isTrue": true,
+          "questionId": 9682,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">正确对待保密与讲真话的关系，经家属同意后告知实情，重点减轻病痛</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42608,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:35:46",
+          "updateTime": "2019-06-27 13:35:46",
+          "isTrue": false,
+          "questionId": 9682,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">恪守保密原则，继续隐瞒病情，直至患者病死</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42609,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:35:46",
+          "updateTime": "2019-06-27 13:35:46",
+          "isTrue": false,
+          "questionId": 9682,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">遵循病人自主原则，全面满足病人要求</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42610,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:35:46",
+          "updateTime": "2019-06-27 13:35:46",
+          "isTrue": false,
+          "questionId": 9682,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">依据知情同意原则，应该告知病人所有信息</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42611,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:35:46",
+          "updateTime": "2019-06-27 13:35:46",
+          "isTrue": false,
+          "questionId": 9682,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">依据有利原则，劝导病人试用一些民间土方</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9678,
+      "createTime": "2019-06-27 13:34:36",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 9,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">据报道。现在有些医院已采取了一些隔离措施，使体格检查置于一个相对封闭的环境中，以免受检病人曝光于众人面前。更确切地说这些措施反映了医院和医生哪一种医德意识</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\">&nbsp;<span style=\"font-family:楷体\">医疗保密体现了对病人隐私权</span>,对病人人格和尊严的尊重。我国现行法律法规中病人的基本权利含有隐私权。隐私权是指病人享有不公开自己病情、家族史、接触史、身体隐蔽部位、异常生理特征等个人生活秘密和自由的权利,医院及其工作人员不得非法泄密。医疗保密是良好医患关系维系的重要保证，是取得病人信任和主动合作的重要条件。在临床医疗中，无论是有意还是无意泄露病人隐私都会对病人造成伤害,都会破坏医患间的信任关系,降低病人对医务人员的信任程度,从而导致医患关系的恶性循环,甚至因此引起不必要的医疗纠纷。该题反映了保护病人隐私意识。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42587,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:34:36",
+          "updateTime": "2019-06-27 13:34:36",
+          "isTrue": false,
+          "questionId": 9678,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">服务意识</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42588,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:34:36",
+          "updateTime": "2019-06-27 13:34:36",
+          "isTrue": false,
+          "questionId": 9678,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">管理意识</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42589,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:34:36",
+          "updateTime": "2019-06-27 13:34:36",
+          "isTrue": true,
+          "questionId": 9678,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">保护病人隐私意识</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42590,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:34:36",
+          "updateTime": "2019-06-27 13:34:36",
+          "isTrue": false,
+          "questionId": 9678,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">有利于病人的意识</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42591,
+          "delFlag": false,
+          "createTime": "2019-06-27 13:34:36",
+          "updateTime": "2019-06-27 13:34:36",
+          "isTrue": false,
+          "questionId": 9678,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">热爱医学事业的意识</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9675,
+      "createTime": "2019-06-27 12:03:54",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 8,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">在高干病房。一些医护人员称呼病人总是用</span>“赵书记”、“钱局长”等，语调适中，而到了一般病房。称呼就换成了“3床”、“做肠透视的”等，话语十分生硬。从深层次上说，此类现象的本质和解决措施是&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">公正原则是指在同样有医疗需求的病人，应得到同样的医疗待遇。在基本的医疗照顾上，力求做到人人享有基本的医疗保健，并以同样的服务态度、医疗技术对待有同样需要的病人。根据题干，体现了公正意识差，应该加强教育。</span></span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42572,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:03:54",
+          "updateTime": "2019-06-27 12:03:54",
+          "isTrue": false,
+          "questionId": 9675,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">敬业精神差，应加强管理</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42573,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:03:54",
+          "updateTime": "2019-06-27 12:03:54",
+          "isTrue": false,
+          "questionId": 9675,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">语言不文明，应加强培训</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42574,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:03:54",
+          "updateTime": "2019-06-27 12:03:54",
+          "isTrue": false,
+          "questionId": 9675,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">尊重意识差，应加强教育</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42575,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:03:54",
+          "updateTime": "2019-06-27 12:03:54",
+          "isTrue": true,
+          "questionId": 9675,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">公正意识差。应加强教育</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42576,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:03:54",
+          "updateTime": "2019-06-27 12:03:54",
+          "isTrue": false,
+          "questionId": 9675,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">服务意识差，应加强教育</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9672,
+      "createTime": "2019-06-27 12:01:37",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 7,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">一位住在妇产科病房的病人，手术后腹胀，哭闹着要找科主任来给她看一看。该主任来后。经仔细查看，发现患者只是心理上有些问题，于是说了一些安慰她的话，病人便安静下来了。还有说有笑。有同事见了不以为然地说，这也值得主任来管，主任莞尔一笑，说：</span>“难道当主任的就非得看什么大病吗…有些劳动是平凡的，好像毋须一顾。但是，它的精神是神圣的，一个人没有这种神圣的感觉。他就不会每件事都那么仔细、耐心地去作。”这充分体现了</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">公正原则是指在同样有医疗需求的病人，应得到同样的医疗待遇。在基本的医疗照顾上，力求做到人人享有基本的医疗保健，并以同样的服务态度、医疗技术对待有同样需要的病人。一个负有</span>“救人”、“活命”责任的医生，在行医中必须具有清廉的道德，正直的品格。清廉正直与仁爱是相关的，一位仁爱的医生在其行医时，必须具有杜绝名利、清廉正直的道德品质。即使是主任，对待普通病人也依旧如此。体现了公正原则，正直美德。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42557,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:01:37",
+          "updateTime": "2019-06-27 12:01:37",
+          "isTrue": false,
+          "questionId": 9672,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">传统医学观、不伤害原则、同情美德</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42558,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:01:37",
+          "updateTime": "2019-06-27 12:01:37",
+          "isTrue": false,
+          "questionId": 9672,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">现代医学观、不伤害原则、同情美德</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42559,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:01:37",
+          "updateTime": "2019-06-27 12:01:37",
+          "isTrue": true,
+          "questionId": 9672,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">现代医学观、公正原则、正直美德</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42560,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:01:37",
+          "updateTime": "2019-06-27 12:01:37",
+          "isTrue": false,
+          "questionId": 9672,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">传统医学观、公正原则、正直美德</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42561,
+          "delFlag": false,
+          "createTime": "2019-06-27 12:01:37",
+          "updateTime": "2019-06-27 12:01:37",
+          "isTrue": false,
+          "questionId": 9672,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">以上都不是</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9660,
+      "createTime": "2019-06-27 11:55:08",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 6,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某女患者。未婚，发现左侧乳房有肿块。经医生检查判断后拟进行手术治疗。但患者十分担心手术后会影响以后生活质量。经过医生积极解释，患者消除了心理负担并要求保密。在征得患者的家属同意的情况下进行了手术，手术顺利完成，患者满意。这体现了患者的</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">在伦理方面我国的主要权利包括</span>:基本医疗权,任何人在生病的情况下都有获得相应的医疗服务的权利;疾病认知权,患者对自已所患疾病的性质、严重程度、治疗情况及预后有知悉的权利,医生在不危害患者利益和不影响治疗效果的前提下,应提供有关疾病信息;知情同意权，患者有权知道医生实施的诊治手段的作用、可能发生的并发症及危险,该诊治手段必须经患者同意后方可实施,患者在理智的情况下也有权利拒绝医生的建议;保护隐私权,在治病过程中，患者有权要求医务人员为其保密;免除一定的社会责任权、要求赔偿权,患者拥有由于疾患可以免除承担相应的社会责任的权利,在诊治疾病的过程中身体和健康受到伤害时有要求相应赔偿的权利。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42497,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:55:08",
+          "updateTime": "2019-06-27 11:55:08",
+          "isTrue": false,
+          "questionId": 9660,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">基本医疗权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42498,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:55:08",
+          "updateTime": "2019-06-27 11:55:08",
+          "isTrue": false,
+          "questionId": 9660,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">知情同意权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42499,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:55:08",
+          "updateTime": "2019-06-27 11:55:08",
+          "isTrue": false,
+          "questionId": 9660,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">疾病认知权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42500,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:55:08",
+          "updateTime": "2019-06-27 11:55:08",
+          "isTrue": false,
+          "questionId": 9660,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">保护隐私权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42501,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:55:08",
+          "updateTime": "2019-06-27 11:55:08",
+          "isTrue": true,
+          "questionId": 9660,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">以上均是</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9656,
+      "createTime": "2019-06-27 11:54:10",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 5,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某女患者，</span>40岁，企图自杀，服用大量巴比妥严重中毒，送来医院时，呼吸已经停止。马上对病人进行洗胃。无效。在没有其他对抗措施的条件下，采用了在当时还没有推广的人工肾透析治疗法进行抢救，收到了很好的疗效。为了抢救病人，采用了治疗性试验。对此做法，下面说法错误的是&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">在医疗实践中，医疗行为是否符合医学道德的关键是看这种行为的出发点、过程和后果是否有利于抢救病人的生命，是否有利于病人恢复健康。当然，在这一过程中，是否尊重病人的人格和权利也是十分重要的，如果能使抢救生命、恢复健康与尊重人格、尊重权利达到高度统一则是最好的，也是医务人员应当追求的。虽然采用了治疗性试验，但是收到了很好的疗效。所以</span>C错误。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42477,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:54:10",
+          "updateTime": "2019-06-27 11:54:10",
+          "isTrue": false,
+          "questionId": 9656,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">动机是好的，但得失结果一时难以下结论</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42478,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:54:10",
+          "updateTime": "2019-06-27 11:54:10",
+          "isTrue": false,
+          "questionId": 9656,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">是符合医学道德的医学行为</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42479,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:54:10",
+          "updateTime": "2019-06-27 11:54:10",
+          "isTrue": true,
+          "questionId": 9656,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">即使是抢救成功，也不合乎道德规范</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42480,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:54:10",
+          "updateTime": "2019-06-27 11:54:10",
+          "isTrue": false,
+          "questionId": 9656,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">即使不幸造成死亡或伤残，也不能逆推动机不好</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42481,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:54:10",
+          "updateTime": "2019-06-27 11:54:10",
+          "isTrue": false,
+          "questionId": 9656,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">本案例医生的选择是正确的</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9653,
+      "createTime": "2019-06-27 11:52:58",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 4,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某病人因车祸造成多发性骨折，多脏器破裂，如果不及时手术，就会危及病人生命。然而，同行的伙伴谁也不敢代替家属签名。这时，主刀医生站出来。说：</span>“我签，有责任我负!”经过医务人员的全力抢救。病人终于脱离危险。医生最符合医学道德的做法是&nbsp;</span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">作为一个人民的医生，对待风险的正确态度是慎重而果断。即一方面尽量选择安全有效、风险最小、损伤最轻的抢救方案，不随意冒险</span>;另一方面又不能回避风险，要积极、大胆地进行抢救，只要病人有一线希望，就要积极抢救。同时这道题也体现了医生以病人利益为重、无私无畏的高尚医德精神。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42462,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:52:58",
+          "updateTime": "2019-06-27 11:52:58",
+          "isTrue": false,
+          "questionId": 9653,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医生不应施手术。因为没有人在手术同意书上签字</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42463,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:52:58",
+          "updateTime": "2019-06-27 11:52:58",
+          "isTrue": false,
+          "questionId": 9653,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">主刀医生已把不施行手术抢救可有发生的后果告知他的伙伴，如抢救不成功。医生不应该承担法律责任</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42464,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:52:58",
+          "updateTime": "2019-06-27 11:52:58",
+          "isTrue": true,
+          "questionId": 9653,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">主刀医生代表患者亲人签字，表现了医生以病人利益为重、无私无畏的高尚医德精神</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42465,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:52:58",
+          "updateTime": "2019-06-27 11:52:58",
+          "isTrue": false,
+          "questionId": 9653,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">以上三点都符合抢救重危病人的道德</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42466,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:52:58",
+          "updateTime": "2019-06-27 11:52:58",
+          "isTrue": false,
+          "questionId": 9653,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">以上除</span>B点，其他几点都是符合医学道德的</span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9647,
+      "createTime": "2019-06-27 11:51:52",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 3,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某病人要做腰穿检查，有恐惧感。从医德要求考虑，临床医生应向病人做的主要工作是</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">知情同意权是指患者在医疗卫生服务中享有知晓自己病情和医务人员所要采取的诊治措施，并自主选择合适的诊治决策的权利。知情权就是医务人员向患者提供尽可能多的信息，让患者尽量了解有关方面的知识，知道诊断结论、治疗方案、病情预后以及诊治费用等方面信息的权利。知情权大致包括</span>:医疗机构基本情况、经治医务人员基本情况、特殊检查情况、有危险的手术或操作、危险或不良后果、试验性检查或治疗、收费情况、有伤害的医疗措施、药物的副作用、对患者隐私的检查暴露、与教学和科研有关的诊疗行为、限制患者的行为等。同意权是指在充分知情的基础上，患者对医护人员的建议、方案、决定做出的自愿赞成或默许，同意进行诊断、检查及治疗的权利。同时它又是一项义务，是患者必须履行的，必须做出同意或者不同意的表示。如果同意必须签字表明。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42432,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:51:52",
+          "updateTime": "2019-06-27 11:51:52",
+          "isTrue": true,
+          "questionId": 9647,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">要得到病人知情同意</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42433,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:51:52",
+          "updateTime": "2019-06-27 11:51:52",
+          "isTrue": false,
+          "questionId": 9647,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">告知做腰穿的必要性．嘱病人配合</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42434,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:51:52",
+          "updateTime": "2019-06-27 11:51:52",
+          "isTrue": false,
+          "questionId": 9647,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">告知做腰穿时应注意的事项</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42435,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:51:52",
+          "updateTime": "2019-06-27 11:51:52",
+          "isTrue": false,
+          "questionId": 9647,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">因诊断需要，先动员，后检查</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42436,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:51:52",
+          "updateTime": "2019-06-27 11:51:52",
+          "isTrue": false,
+          "questionId": 9647,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">动员家属做病人思想工作</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9625,
+      "createTime": "2019-06-27 11:43:52",
+      "topicId": null,
+      "tagId": 1061,
+      "rule": 1,
+      "weight": 1,
+      "sort": 2,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">某病人，因医生开药少而且便宜，所以对医生有意见，诊治医生在对病人作解释时，以下哪一点是不当的</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">在医疗的全过程中，每一项医疗行为和医疗方案的决定，如对疾病的诊断、采用的治疗方法，选择治疗方法等都属于医生权利范围，只能由医生自主决定。当然患者和家属可以参与讨论并提出意见，但不能代替医生做出决定。所以</span>D是错的。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42322,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:43:52",
+          "updateTime": "2019-06-27 11:43:52",
+          "isTrue": false,
+          "questionId": 9625,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">对症下药</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42323,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:43:52",
+          "updateTime": "2019-06-27 11:43:52",
+          "isTrue": false,
+          "questionId": 9625,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">合理配伍</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42324,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:43:52",
+          "updateTime": "2019-06-27 11:43:52",
+          "isTrue": false,
+          "questionId": 9625,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">节约费用</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42325,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:43:52",
+          "updateTime": "2019-06-27 11:43:52",
+          "isTrue": true,
+          "questionId": 9625,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医生权力有限</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42326,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:43:52",
+          "updateTime": "2019-06-27 11:43:52",
+          "isTrue": false,
+          "questionId": 9625,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">遵守医疗报销制度</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    },
+    {
+      "id": 9623,
+      "createTime": "2019-06-27 11:42:54",
+      "topicId": null,
+      "tagId": 1310,
+      "rule": 1,
+      "weight": 1,
+      "sort": 1,
+      "accuracy": 0.0,
+      "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">一因车祸受重伤的男子被送去医院急救，因没带押金，医生拒绝为病人办理住院手续，当病人家属拿来钱时，已错过了抢救最佳时机。病人死亡。本案例违背了病人权利的哪一点</span></span></p>",
+      "trueCnt": 0,
+      "falseCnt": 0,
+      "analysis": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">医务人员必须明确</span>:(1)任何患者都有权享有必要的、合理的、最基本的诊治护理，以保障自身健康。(2) 人类生存的权利是平等的，因而医疗保健享有权也是平等的，公民在身心健康出现问题时，应享受平等医疗救治的权利。任何医疗机构或个人不能以各种理由推脱、阻碍这种权利的实现。所以本题违背了患者的基本医疗权。</span></p>",
+      "topic": null,
+      "options": [
+        {
+          "id": 42312,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:42:54",
+          "updateTime": "2019-06-27 11:42:54",
+          "isTrue": false,
+          "questionId": 9623,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">享有自主权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42313,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:42:54",
+          "updateTime": "2019-06-27 11:42:54",
+          "isTrue": false,
+          "questionId": 9623,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">享有知情同意权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42314,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:42:54",
+          "updateTime": "2019-06-27 11:42:54",
+          "isTrue": false,
+          "questionId": 9623,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">享有保密和隐私权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42315,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:42:54",
+          "updateTime": "2019-06-27 11:42:54",
+          "isTrue": true,
+          "questionId": 9623,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">享有基本的医疗权</span></span></p>",
+          "selectCnt": 0
+        },
+        {
+          "id": 42316,
+          "delFlag": false,
+          "createTime": "2019-06-27 11:42:54",
+          "updateTime": "2019-06-27 11:42:54",
+          "isTrue": false,
+          "questionId": 9623,
+          "content": "<p><span style=\";font-family:楷体;font-size:16px\"><span style=\"font-family:楷体\">享有参与治疗权</span></span></p>",
+          "selectCnt": 0
+        }
+      ],
+      "tags": [
+        {
+          "id": 1061,
+          "delFlag": false,
+          "createTime": "2019-06-09 13:57:55",
+          "updateTime": "2019-06-09 13:57:55",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 49
+        },
+        {
+          "id": 1310,
+          "delFlag": false,
+          "createTime": "2019-06-09 16:18:15",
+          "updateTime": "2019-06-09 16:18:15",
+          "name": "伦理A2",
+          "questionCnt": 17,
+          "tagTypeId": 55
+        }
+      ],
+      "hasCollect": false,
+      "userAnswer": null,
+      "questionPath": null
+    }
+  ]
+}

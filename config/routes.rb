@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     get :produce, :on => :member
   end
 
+  resources :medical_subjects, :only => [:index]
+
   resources :nlps do
     collection do
       post 'analyze'

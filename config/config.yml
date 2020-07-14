@@ -720,10 +720,27 @@ development:
     form_title: 表格
     webimage_title: 网络图片
     handwritten_title: 手写
-    formula_title: 公式 
-    number_title: 数字 
-    stamp_title: 印章 
-    finance_title: 财会 
+    formula_title: 公式
+    number_title: 数字
+    stamp_title: 印章
+    finance_title: 财会
+  medical_subjects:
+    label: 医学科目
+    name: 科目名称
+  medical_majors:
+    label: 医学专业
+    name: 专业名
+    total: 题母数量
+  medical_questions:
+    label: 医学题库
+    title: 标题
+    option: 选项
+    answer: 答案
+    analysis: 解析
+    category: 题型
+    category_single: '0' 
+    category_multiple: '1'
+    category_other: '3' 
 test:
   admins: *1
   users: *2

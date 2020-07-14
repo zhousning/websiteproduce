@@ -1,0 +1,37 @@
+- provide(:title, t('.title'))
+
+- content_for :main_body do
+  .container-fluid.p-0
+    .row
+      .col-md-12
+        %table.text-center.table-bordered.table-sm{:'data-toggle' => "table", :"data-pagination"=>"true", :"data-search" => "true",:'data-advanced-search'=>"true", :'data-id-table'=>"advancedTable"}
+          %thead.thead-light
+            %tr
+              %th{:scope => "col"} #
+            
+              %th{:scope => "col"}
+                = Setting.medical_majors.name
+              %th{:scope => "col"}
+                = Setting.medical_majors.total
+              %th{:scope => "col"}
+          %tbody
+            - @medical_majors.each_with_index do |medical_major, index|
+              %tr
+                %td{:scope => "row"}
+                  = index+1
+              
+                %td
+                  = medical_major.name
+                %td
+                  = medical_major.total
+                %td
+                  .container-fluid
+                    .row
+                      = link_to medical_major_path(medical_major), :class => "text-info col" do
+                        = fa_icon "search"
+                      = link_to edit_medical_major_path(medical_major), :class => "text-success col" do
+                        = fa_icon "edit"
+                      = link_to medical_major, :method => :delete, :data => {:confirm => "确定删除吗?"}, :class => "text-danger col" do
+                        = fa_icon "trash"
+
+= render "layouts/control_panel"
